@@ -67,7 +67,10 @@ export const SearchCardItem = ({ data, getSingleTitle }) => {
               <span className="d-inline-block d-md-none d-lg-none">
                 Watch Now
               </span>
-              <Link to="/" className="offers d-block d-md-none d-lg-none">
+              <Link
+                to={`/${object_type}/${id}`}
+                className="offers d-block d-md-none d-lg-none"
+              >
                 {provider.length} offers available
               </Link>
               {provider &&
