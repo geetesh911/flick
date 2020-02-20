@@ -1,0 +1,159 @@
+.card {
+  background-color: $darkBackgroundColor;
+  //   background-color: transparent;
+  .card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+    img {
+      height: 140px;
+      width: 100px;
+      border-radius: 0.25rem 0 0 0.25rem;
+    }
+  }
+
+  .card-body {
+    padding: 5px 20px;
+
+    .card-title {
+      font-size: 20px;
+      a {
+        color: $whiteFirstLayer;
+      }
+      .year {
+        margin: 0 0 0 5px;
+        color: $whiteFourthLayer;
+        font-size: 14px;
+      }
+    }
+    .card-text {
+      color: $whiteSecondLayer;
+      line-height: 20px;
+      a {
+        color: $whiteFourthLayer;
+        font-size: 12px;
+        margin-right: 10px;
+        .provider-icon {
+          height: 45px;
+          width: 45px;
+          border-radius: 11px;
+        }
+        &:first-of-type {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .watch-list-button {
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+
+      button {
+        color: $whiteFirstLayer;
+      }
+    }
+
+    .ratings {
+      position: absolute;
+      margin-top: 0.5rem;
+      bottom: 5px;
+      .imdb,
+      .rotten-tomatoes,
+      .tmdb {
+        img {
+          height: 20px !important;
+          width: 20px !important;
+        }
+        p {
+          margin: 0px 0 -2px 5px;
+          position: absolute;
+          bottom: 5px;
+        }
+        font-size: 11px;
+      }
+      .rotten-tomatoes,
+      .imdb {
+        margin-right: 30px;
+        img {
+          height: 15px !important;
+          width: 15px !important;
+        }
+      }
+      .rotten-tomatoes {
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+.searchCard {
+  &:last-of-type {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    .card-horizontal {
+      img {
+        height: 200px;
+        width: 150px;
+        border-radius: 0.25rem 0 0 0.25rem;
+      }
+    }
+    .card-body {
+      .watch-list-button {
+        bottom: 10px;
+      }
+
+      .ratings {
+        position: absolute;
+        bottom: 5px;
+        .imdb,
+        .rotten-tomatoes,
+        .tmdb {
+          img {
+            height: 20px !important;
+            width: 20px !important;
+          }
+          p {
+            margin: 0px 0 -2px 5px;
+            position: absolute;
+            bottom: 1px;
+          }
+          font-size: 15px;
+        }
+        .rotten-tomatoes,
+        .imdb {
+          margin-right: 40px;
+          img {
+            height: 20px !important;
+            width: 20px !important;
+          }
+        }
+        .rotten-tomatoes {
+          margin-right: 50px;
+        }
+      }
+
+      .card-title {
+        font-size: 30px;
+        .year {
+          margin: 0 0 0 5px;
+          color: $whiteFourthLayer;
+          font-size: 20px;
+        }
+      }
+      .card-text {
+        a {
+          margin-right: 10px;
+          .provider-icon {
+            height: 55px;
+            width: 55px;
+            border-radius: 11px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap");
+
+.season {
+  .accordion {
+    .card {
+      background-color: transparent;
+      //   border-bottom: 1px solid rgba(#4c5a67, 0.5);
+      button {
+        padding: 6px 0;
+      }
+      .card-header {
+        padding: 0 0px;
+        text-align: left;
+        border-bottom: 1px solid rgba(#4c5a67, 0.5);
+        .season-number {
+          text-transform: uppercase;
+          color: $whiteSecondLayer;
+          font-weight: bold;
+          font-family: "Open Sans", sans-serif;
+          &::after {
+            content: " - ";
+          }
+        }
+        .season-title {
+          font-family: "Open Sans", sans-serif;
+          color: #4c5a67;
+          &:hover {
+            color: $whiteSecondLayer;
+          }
+        }
+        .icon {
+          fill: $whiteSecondLayer;
+          float: right;
+        }
+      }
+      .btn-link {
+        &:hover,
+        &:focus {
+          text-decoration: none !important;
+          color: $whiteSecondLayer;
+        }
+      }
+    }
+  }
+}

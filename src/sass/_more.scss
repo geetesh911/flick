@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+
+.logo {
+  text-align: center;
+  font-family: "Amazon Ember", "sans-serif";
+  font-size: 70px;
+  color: white;
+  margin: 0 auto 0px;
+}
+
+.aboutModal-header,
+.aboutModal-body,
+.aboutModal-footer {
+  background-color: $darkColor;
+  border: none;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+}
+
+.aboutModal-header,
+.aboutModal-footer {
+  background-color: #f8f9fa;
+  color: $darkColor;
+}
+
+.aboutModal-footer {
+  border-top: 2px solid #ffc107;
+}
+
+.aboutModal-header {
+  border-bottom: 2px solid #ffc107;
+  .modal-title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  .close {
+    color: $darkColor;
+  }
+}
+
+.more {
+  font-family: "Lato", sans-serif;
+
+  .user-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+    background-image: url("https://i.ibb.co/VSQ7hFM/netflix-tv.png");
+    background-color: $backgroundColor;
+    height: 300px;
+    background-position: center;
+    background-size: 420px 300px;
+    background-repeat: no-repeat;
+    img {
+      height: 70px;
+      width: 70px;
+    }
+    .user-icon {
+      display: inline-block;
+    }
+    .user-name {
+      margin-left: 30px;
+      display: inline-block;
+      .name {
+        color: white;
+        text-transform: uppercase;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+      }
+      font-size: 20px;
+      color: $whiteSecondLayer;
+    }
+  }
+
+  .menu {
+    color: $whiteSecondLayer;
+    font-size: 20px;
+    margin-top: 5px;
+    .option {
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 5px;
+      background-color: $darkColor;
+      color: white;
+      .option-text {
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    font-size: 50px;
+  }
+}

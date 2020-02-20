@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  padding-bottom: 50px;
+}
+
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  //give nav it's own compsite layer
+  will-change: transform;
+  transform: translateZ(0);
+
+  display: flex;
+
+  height: 60px;
+
+  //   box-shadow: 0 -2px 5px -2px #252525;
+  background-color: $darkBackgroundColor;
+  color: $whiteThirdLayer;
+
+  font-family: "Roboto", sans-serif;
+  a {
+    color: $whiteThirdLayer;
+  }
+  &__item {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:hover {
+      color: $whiteFirstLayer;
+      background-color: #070707;
+      text-decoration: none;
+    }
+  }
+  &__item--active {
+    //dev
+    color: $whiteFirstLayer !important;
+  }
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-bottom-nav {
+    padding: 0 60px;
+  }
+}
+@media (min-width: 992px) {
+  .mobile-bottom-nav {
+    padding: 0 100px;
+  }
+}

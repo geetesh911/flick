@@ -1,25 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import StartState from "./context/start/StartState";
+import { NavBar } from "./components/common/NavBar";
+import { DashBoard } from "./components/layout/DashBoard";
+import { Search } from "./components/layout/Search";
+import "./css/style.css";
+import SearchState from "./context/search/SearchState";
+import { SingleTitle } from "./components/common/SingleTitle";
+import { SeasonSingleTitle } from "./components/common/SeasonSingleTitle";
+import { PrivateRoute } from "./components/routing/PrivateRoute";
+import { WatchList } from "./components/layout/WatchList";
+import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
+import AuthState from "./context/auth/AuthState";
+import AlertState from "./context/alert/AlertState";
+import { More } from "./components/layout/More";
+import WatchlistState from "./context/watchlist/WatchlistState";
+import setAuthToken from "./utils/setAuthToken";
+
+if (localStorage.token) setAuthToken(localStorage.token);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthState>
+      <AlertState>
+        <WatchlistState>
+          <StartState>
+            <SearchState>
+              <Router>
+                <Fragment>
+                  <NavBar />
+                  <Switch>
+                    <Route exact path="/" component={DashBoard} />
+                    <Route exact path="/login" component={Login} />
+                    <Route exact path="/register" component={Register} />
+                    <Route exact path="/search" component={Search} />
+                    <Route exact path="/:type/:id" component={SingleTitle} />
+                    <Route
+                      exact
+                      path="/:type/:id/:season_id"
+                      component={SeasonSingleTitle}
+                    />
+                    <PrivateRoute exact path="/mylist" component={WatchList} />
+                    <PrivateRoute exact path="/more" component={More} />
+                  </Switch>
+                </Fragment>
+              </Router>
+            </SearchState>
+          </StartState>
+        </WatchlistState>
+      </AlertState>
+    </AuthState>
   );
 }
 

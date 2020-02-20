@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+.dashboard {
+  background: url("https://www.justwatch.com/appassets/img/frontpage/bg-tiles.png");
+  //   height: 80.5vh;
+  padding: 0;
+  /* Center and scale the image nicely */
+  //   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 130%;
+
+  .mobile-bottomDIV {
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #1a2028 !important;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow-x: visible;
+    overflow-y: visible;
+    white-space: nowrap;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+    background: transparent;
+    border-radius: 50px;
+    margin: 10px auto 150px;
+
+    .heading {
+      text-align: center;
+      color: #d9b534;
+      font-family: "Lato", sans-serif;
+      text-transform: uppercase;
+    }
+  }
+
+  .row {
+    width: 100% !important;
+    padding: 0;
+    .dashboard-area {
+      align-self: flex-start !important;
+      width: 100% !important;
+    }
+    .dashboard-tagline {
+      padding-left: 0;
+
+      .upcoming {
+        text-align: left;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        color: #d9b534;
+        font-family: "Lato", sans-serif;
+        text-transform: uppercase;
+      }
+
+      .dashboard-text {
+        font-size: 70px;
+        line-height: 80px;
+        margin: 70px 0 50px 10px;
+        // text-transform: capitalize;
+        font-family: "Amazon Ember";
+      }
+
+      .bottomDIV {
+        background-color: #1a2028;
+        // margin-top: 30px;
+        height: 150px;
+        padding: 15px 15px 10px;
+        width: 100%;
+        border-radius: 0 20px 20px 0;
+      }
+    }
+    .dashboard-tv {
+      overflow-x: hidden;
+      //   background: url("../flick-images/tv.png");
+      background-size: 1100px 700px;
+      height: 800px;
+      width: 1100px;
+      background-position: center;
+
+      .tv-tagline {
+        position: absolute;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    z-index: 1;
+    // background: rgba(#08111d, 0.9);
+    background: rgba($backgroundColor, 0.9);
+    box-shadow: inset 120px 100px 250px $backgroundColor,
+      inset -120px -100px 250px $backgroundColor;
+    // box-shadow: inset 120px 100px 250px #08111d,
+    //   inset -120px -100px 250px #08111d;
+  }
+
+  .dashboard-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    font-family: "Amazon Ember", "sans-serif";
+    font-size: 70px;
+    color: white;
+    margin: 0 auto 0px;
+  }
+
+  .movieData {
+    position: absolute;
+    bottom: 150px;
+  }
+
+  .startMovies,
+  .movieData {
+    padding: 0 10px;
+    color: white;
+    align-self: flex-start;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    overflow-x: visible;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+    background: transparent;
+    border-radius: 0px;
+
+    .release_date {
+      height: 27px;
+      text-align: center;
+      background-color: #101010;
+    }
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+  .heading {
+    color: white;
+    align-self: flex-start;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: left;
+    &:first-of-type {
+      margin-top: 80px;
+    }
+  }
+}
+
+// 768px
+@media (max-width: 769px) {
+  .dashboard {
+    // height: 40vh;
+    .logo {
+      margin: 0px auto;
+      font-size: 70px;
+    }
+    .startMovies {
+      text-align: left;
+    }
+    .heading {
+      // align-self: left !important;
+      font-size: 20px !important;
+    }
+    .dashboard-tv {
+      align-items: center;
+      margin: auto;
+      overflow-x: hidden;
+      text-align: center;
+      background: url("../flick-images/tv.png");
+      background-size: 1100px 680px !important;
+      height: 680px !important;
+      width: 1100px !important;
+      background-position: center;
+
+      .tv-tagline {
+        align-self: center;
+        bottom: 40px;
+        font-size: 65px !important;
+        font-family: "Amazon Ember";
+        display: block !important;
+      }
+    }
+    .mobile-bottomDIV {
+      display: block !important;
+      margin-bottom: 50px;
+      .heading {
+        margin-top: 10px;
+      }
+    }
+    .movieData {
+      bottom: 20px;
+    }
+  }
+}
+
+// 576 px
+@media (max-width: 576px) {
+  .dashboard {
+    // height: 50vh;
+    .logo {
+      margin: 0px auto;
+      font-size: 50px;
+    }
+    .startMovies {
+      text-align: left;
+    }
+    .heading {
+      // align-self: left !important;
+      margin-top: 20px !important;
+      font-size: 20px !important;
+    }
+    .dashboard-tv {
+      align-items: center;
+      margin: auto;
+      overflow-x: visible !important;
+      background: url("../flick-images/tv.png");
+
+      background-size: 550px 340px !important;
+      height: 350px !important;
+      width: 550px !important;
+      background-position: center;
+
+      .tv-tagline {
+        // left: 50%;
+        align-self: center;
+        bottom: 30px;
+        font-size: 35px !important;
+        font-family: "Amazon Ember";
+      }
+    }
+
+    .mobile-bottomDIV {
+      display: block !important;
+      margin-bottom: 120px;
+    }
+    .movieData {
+      bottom: 20px;
+    }
+
+    .col-lg-7 {
+      padding: 0;
+    }
+  }
+}

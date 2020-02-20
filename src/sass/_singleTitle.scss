@@ -1,0 +1,369 @@
+.back {
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 5px 10px;
+  a {
+    color: white !important;
+  }
+  .back-icon {
+    fill: white !important;
+    height: 20px;
+    width: 20px;
+  }
+  font-size: 20px;
+}
+
+.bookmark-icon {
+  position: relative;
+  color: #ffc107;
+  .fas {
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+}
+
+.movie {
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  background-color: $backgroundColor;
+  top: 450px;
+  z-index: 10;
+  padding: 15px;
+
+  .mylist-button {
+    button {
+      fill: #ffc107;
+      &:hover {
+        fill: #212529;
+      }
+      &:focus {
+        fill: #495057;
+      }
+      &:active {
+        fill: #212529;
+      }
+    }
+  }
+
+  .text,
+  .title-text {
+    color: #4c5a67;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 0.5rem;
+  }
+
+  .title-text {
+    margin-top: 2rem;
+  }
+
+  .row {
+    margin-bottom: 80px;
+    padding-bottom: 90px;
+  }
+
+  .poster {
+    img {
+      width: 100%;
+    }
+  }
+
+  .details {
+    .title-block > h1 {
+      margin-top: 0;
+      font-size: 28px;
+      line-height: 1.2;
+      color: #fff;
+
+      .text-muted {
+        font-size: 20px;
+        color: #b5b8ba;
+        text-shadow: 0 1px 0 #000;
+      }
+    }
+
+    .title-block > h3 {
+      font-size: 19px;
+      font-weight: 100;
+      color: #b5b8ba;
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+  }
+  .offers {
+    margin-top: 1rem;
+    // height: 100px;
+
+    .offer {
+      height: 89px;
+      margin-top: 1px;
+      border-bottom: 1px solid rgba(#b5b8ba, 0.1);
+      .offer_category {
+        margin: 2rem 0 0 -16px !important;
+        padding: 0 5px;
+        text-transform: uppercase;
+        font-weight: 500;
+        transform: rotate(-90deg);
+        width: 89px;
+        position: absolute;
+        left: 0;
+        text-align: center;
+      }
+      .flatrate {
+        background-color: #b5b8ba;
+        color: #6d6d6d;
+      }
+      .rent {
+        background-color: #7c7c7c;
+        color: #d6d6d6;
+      }
+      .buy {
+        background-color: #373737;
+        color: #d6d6d6;
+      }
+
+      .provider {
+        margin: 0 0 0 35px;
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        img {
+          border-radius: 11px;
+          height: 50px;
+          width: 50px;
+        }
+      }
+    }
+  }
+
+  .movie-details {
+    border-top: 1px solid rgba(#4c5a67, 0.5);
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(#4c5a67, 0.5);
+    .genres {
+      span {
+        &::after {
+          content: ", ";
+        }
+        &:last-of-type {
+          &::after {
+            content: "";
+          }
+        }
+      }
+    }
+    .movie-details-text {
+      width: 40%;
+    }
+    .rating-details {
+      .movie-details-text {
+        margin-top: 0;
+      }
+    }
+
+    .ratings {
+      position: absolute;
+      display: inline;
+      // bottom: 5px;
+      .imdb,
+      .rotten-tomatoes,
+      .tmdb {
+        img {
+          height: 20px !important;
+          width: 20px !important;
+        }
+        p {
+          margin: 0px 0 -2px 5px;
+          position: absolute;
+          bottom: 4px;
+        }
+        font-size: 13px;
+      }
+      .rotten-tomatoes,
+      .imdb {
+        margin-right: 30px;
+        img {
+          height: 20px !important;
+          width: 20px !important;
+        }
+      }
+      .rotten-tomatoes {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  .synopsis {
+    color: $whiteThirdLayer;
+    font-size: 16px;
+  }
+  .cast {
+    white-space: nowrap;
+    overflow: scroll;
+    // .card {
+    //   display: inline-block !important;
+    //   height: fit-content;
+    //   background-color: transparent;
+    //   .card-img-top {
+    //     height: fit-content;
+    //     width: fit-content;
+    //   }
+    //   .card-body {
+    //     border-radius: 10px;
+    //     padding: 10px 20px;
+    //     width: inherit;
+    //     // display: inline-block;
+    //     background-color: $darkColor;
+    //     .card-title {
+    //       font-size: 20px;
+    //     }
+    //     .card-text {
+    //       color: $whiteThirdLayer;
+    //     }
+    //   }
+    // }
+    .card {
+      width: 138px;
+      display: inline-block;
+      margin-right: 15px;
+      .card-body {
+        .card-title {
+          font-size: 1rem;
+          margin-bottom: 0;
+          overflow: auto;
+          text-overflow: ellipsis;
+        }
+        .card-text {
+          font-size: 0.7rem;
+          margin-bottom: 0;
+          overflow: auto;
+          text-overflow: ellipsis;
+        }
+        padding: 10px 5px;
+      }
+    }
+    .credit {
+      margin-left: 15px !important;
+      &:first-of-type {
+        margin-left: 0px !important;
+      }
+      .actor {
+        color: #78a6b8 !important;
+      }
+      .character {
+        width: 100px;
+        // position: relative;
+        text-transform: capitalize;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        p {
+          margin-bottom: 0 !important;
+        }
+      }
+      .character .tooltiptext {
+        visibility: hidden;
+        // width: 120px;
+        background-color: white;
+        color: #000;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 100;
+      }
+
+      .character:hover .tooltiptext {
+        visibility: visible;
+      }
+    }
+  }
+  .startMovies,
+  .seasons {
+    padding: 0 10px 0 0;
+    color: white;
+    align-self: flex-start;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    overflow-x: visible;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+    background: transparent;
+    border-radius: 0px;
+
+    .name {
+      height: 27px;
+      text-align: center;
+      background-color: #101010;
+    }
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+  .seasons {
+    .season-poster {
+      display: inline-block;
+      position: relative;
+      width: fit-content;
+      margin-top: 10px;
+      margin-left: 10px;
+      // &:nth-child(even) {
+      // }
+      img {
+        width: 156px;
+      }
+      .season-title-badge {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+      }
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+    .season-title {
+      color: $whiteThirdLayer;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .movie {
+    .videos {
+      iframe {
+        width: 210px;
+        height: 130px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .movie {
+    .videos {
+      iframe {
+        width: 330px;
+        height: 220px;
+        display: block;
+        margin: auto !important;
+      }
+    }
+    .mobile-poster {
+      margin-top: 25px;
+      width: 100%;
+    }
+  }
+}

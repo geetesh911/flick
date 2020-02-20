@@ -1,0 +1,54 @@
+.personModal-header,
+.personModal-body,
+.personModal-footer {
+  background-color: $darkColor;
+  border: none;
+}
+.personModal-header {
+  border-bottom: 2px solid #ffc107;
+}
+.personModal-footer {
+  border-top: 2px solid #ffc107;
+}
+
+.personModal-header,
+.personModal-footer {
+  background-color: #f8f9fa;
+  color: $darkColor;
+}
+
+.modal-content {
+  img {
+    display: block;
+    margin: auto;
+  }
+  border: none;
+  .nav {
+    margin-top: 20px;
+    a {
+      color: $whiteSecondLayer;
+    }
+  }
+  .tab-content {
+    padding: 5px;
+    .person-info {
+      margin-bottom: 10px;
+      display: block;
+      color: #b5b8ba;
+      a {
+        color: #b5b8ba !important;
+      }
+    }
+  }
+}
+
+.personModal-header {
+  .close {
+    color: $backgroundColor;
+  }
+  .dob {
+    font-size: 15px;
+    color: $whiteFourthLayer;
+    margin-bottom: 0;
+  }
+}
