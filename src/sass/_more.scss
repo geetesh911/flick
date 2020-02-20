@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Carter+One|Roboto+Condensed&display=swap");
 
 .logo {
   text-align: center;
-  font-family: "Amazon Ember", "sans-serif";
+  font-family: "Carter One", "sans-serif";
   font-size: 70px;
   color: white;
   margin: 0 auto 0px;
@@ -42,8 +42,9 @@
 }
 
 .more {
-  font-family: "Lato", sans-serif;
-
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   .user-area {
     display: flex;
     justify-content: center;
@@ -68,7 +69,9 @@
       .name {
         color: white;
         text-transform: uppercase;
-        font-family: "Lato", sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         font-weight: 600;
       }
       .email {
