@@ -48,7 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 60px 20px;
+    padding: 60px 30px;
     background-image: url("https://i.ibb.co/VSQ7hFM/netflix-tv.png");
     background-color: $backgroundColor;
     height: 300px;
@@ -70,6 +70,9 @@
         text-transform: uppercase;
         font-family: "Lato", sans-serif;
         font-weight: 600;
+      }
+      .email {
+        font-size: 17px;
       }
       font-size: 20px;
       color: $whiteSecondLayer;
