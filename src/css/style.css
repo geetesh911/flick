@@ -1421,6 +1421,16 @@ body {
   color: #a6a6a6;
 }
 
+.movie .recommendations img {
+  width: auto;
+  height: 150px;
+  border-radius: 8px 8px 0 0;
+}
+
+.movie .recommendations .name {
+  border-radius: 0 0 8px 8px;
+}
+
 @media (max-width: 768px) {
   .movie .videos iframe {
     width: 210px;

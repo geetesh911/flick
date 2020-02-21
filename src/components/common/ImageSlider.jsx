@@ -21,7 +21,8 @@ const MyGallery = ({ photos }) => {
       showBullets={true}
       showPlayButton={false}
       showThumbnails={false}
-      useBrowserFullscreen={false}
+      useBrowserFullscreen={true}
+      disableSwipe={false}
     />
   );
 };
