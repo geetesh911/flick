@@ -1,5 +1,3 @@
-import Axios from "axios";
-
 const getIP = async () => {
   let ip = "";
 

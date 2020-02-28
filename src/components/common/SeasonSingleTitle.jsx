@@ -13,6 +13,7 @@ import { Episodes } from "./Episodes";
 import { WatchlistButton } from "./WatchlistButton";
 import getIP from "../../utils/getIP";
 import { FlickCarousel } from "./Carousel";
+import Spinner from "./Spinner";
 
 export const SeasonSingleTitle = props => {
   const searchContext = useContext(SearchContext);
@@ -109,11 +110,11 @@ export const SeasonSingleTitle = props => {
 
   return (
     <Fragment>
-      {season && singleTitle && (
+      {season && singleTitle ? (
         <Fragment>
           {season.backdrops && <FlickCarousel singleTitle={season} />}
-          <div className="back d-block d-lg-none d-md-none">
-            <Link to="#!" onClick={goBack}>
+          <Link to="#!" onClick={goBack}>
+            <div className="back d-block d-lg-none d-md-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="back-icon"
@@ -121,8 +122,8 @@ export const SeasonSingleTitle = props => {
               >
                 <path d="M15 8.25H5.87l4.19-4.19L9 3 3 9l6 6 1.06-1.06-4.19-4.19H15v-1.5z" />
               </svg>
-            </Link>
-          </div>
+            </div>
+          </Link>
           <div className="container movie season">
             <div className="row">
               <div className="col-lg-4 col-lg-pull-8 col-md-4 col-lg-pull-8 d-none d-lg-block d-md-block poster">
@@ -211,6 +212,8 @@ export const SeasonSingleTitle = props => {
             </div>
           </div>
         </Fragment>
+      ) : (
+        <Spinner />
       )}
     </Fragment>
   );

@@ -14,6 +14,7 @@ import { WatchlistButton } from "./WatchlistButton";
 import AuthContext from "./../../context/auth/authContext";
 import getIP from "./../../utils/getIP";
 import { FlickCarousel } from "./Carousel";
+import Spinner from "./Spinner";
 
 export const SingleTitle = props => {
   const searchContext = useContext(SearchContext);
@@ -110,14 +111,14 @@ export const SingleTitle = props => {
 
   return (
     <Fragment>
-      {singleTitle && (
+      {singleTitle ? (
         <Fragment>
           {/* {singleTitle.backdrops && (
             <MyGallery photos={singleTitle.backdrops} />
           )} */}
           {singleTitle.backdrops && <FlickCarousel singleTitle={singleTitle} />}
-          <div className="back d-block d-lg-none d-md-none">
-            <Link to="/search">
+          <Link to="/search">
+            <div className="back d-block d-lg-none d-md-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="back-icon"
@@ -125,8 +126,8 @@ export const SingleTitle = props => {
               >
                 <path d="M15 8.25H5.87l4.19-4.19L9 3 3 9l6 6 1.06-1.06-4.19-4.19H15v-1.5z" />
               </svg>
-            </Link>
-          </div>
+            </div>
+          </Link>
           <div className="container movie">
             <div className="row">
               <div className="col-lg-4 col-lg-pull-8 col-md-4 col-lg-pull-8 d-none d-lg-block d-md-block poster">
@@ -235,6 +236,8 @@ export const SingleTitle = props => {
             </div>
           </div>
         </Fragment>
+      ) : (
+        <Spinner />
       )}
     </Fragment>
   );

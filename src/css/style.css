@@ -1061,6 +1061,12 @@ body {
   height: 400px;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+  top: 40px;
+  bottom: 40px;
+}
+
 @media (max-width: 992px) {
   .carousel-item {
     height: auto;
@@ -1443,6 +1449,26 @@ body {
   border-radius: 0 0 8px 8px;
 }
 
+.spinner-body {
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.spinner-body .spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
 @media (max-width: 768px) {
   .movie .videos iframe {
     width: 210px;
@@ -1729,6 +1755,12 @@ body {
 
 ::-webkit-scrollbar {
   display: none !important;
+}
+
+.toast.show {
+  text-align: center;
+  margin: auto;
+  background-color: #dc3545;
 }
 
 .form-container {

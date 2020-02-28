@@ -76,7 +76,7 @@ const SearchState = props => {
 
       dispatch({ type: GET_GENRES, payload: res.data });
     } catch (err) {
-      dispatch({ type: GET_GENRES_FAILED, payload: err.response.msg });
+      dispatch({ type: GET_GENRES_FAILED, payload: err.response });
     }
   };
 
@@ -86,7 +86,7 @@ const SearchState = props => {
 
       dispatch({ type: GET_PERSON, payload: res.data });
     } catch (err) {
-      dispatch({ type: GET_PERSON_FAILED, payload: err.response.msg });
+      dispatch({ type: GET_PERSON_FAILED, payload: err.response });
     }
   };
 
@@ -103,7 +103,7 @@ const SearchState = props => {
 
       dispatch({ type: GET_SEASON, payload: res.data });
     } catch (err) {
-      dispatch({ type: GET_SEASON_FAILED, payload: err.response.msg });
+      dispatch({ type: GET_SEASON_FAILED, payload: err.response });
     }
   };
 
