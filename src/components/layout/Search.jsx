@@ -47,6 +47,7 @@ export const Search = () => {
             aria-label="Search for a show or movie"
             aria-describedby="basic-addon1"
             autoFocus
+            autoComplete="off"
           />
         </div>
       </div>
