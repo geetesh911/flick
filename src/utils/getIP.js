@@ -7,8 +7,8 @@ const getIP = async () => {
     let ipAddress = await Axios.get(`https://v6.ident.me/.json`);
     ip = ipAddress.data.address;
   } catch (error) {
-    let ipAddress = await Axios.get("http://ip-api.com/json/");
-    ip = ipAddress.data.query;
+    let ipAddress = await Axios.get("https://v4.ident.me/.json");
+    ip = ipAddress.data.address;
   }
   return ip;
 };
