@@ -4,11 +4,13 @@ const getIP = async () => {
   let ip = "";
 
   try {
-    let ipAddress = await Axios.get(`https://v6.ident.me/.json`);
-    ip = ipAddress.data.address;
+    let ipAddress = await fetch(`https://v6.ident.me/.json`);
+    ipAddress = await ipAddress.json();
+    ip = ipAddress.address;
   } catch (error) {
-    let ipAddress = await Axios.get("https://v4.ident.me/.json");
-    ip = ipAddress.data.address;
+    let ipAddress = await fetch(`https://v4.ident.me/.json`);
+    ipAddress = await ipAddress.json();
+    ip = ipAddress.address;
   }
   return ip;
 };
