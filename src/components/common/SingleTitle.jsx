@@ -1,7 +1,6 @@
 import React, { Fragment, useContext, useEffect, useState } from "react";
 import SearchContext from "../../context/search/searchContext";
 import WatchlistContext from "./../../context/watchlist/watchlistContext";
-import MyGallery from "./ImageSlider";
 import providers from "../../utils/providers";
 import { Offer } from "./Offer";
 import { MoviesDetails } from "./MoviesDetails";
@@ -13,6 +12,8 @@ import { Clips } from "./Clips";
 import { Recommendation } from "./Recommendation";
 import { WatchlistButton } from "./WatchlistButton";
 import AuthContext from "./../../context/auth/authContext";
+import getIP from "./../../utils/getIP";
+import { FlickCarousel } from "./Carousel";
 
 export const SingleTitle = props => {
   const searchContext = useContext(SearchContext);
@@ -53,7 +54,7 @@ export const SingleTitle = props => {
     loadUser();
     clearSeason();
     getGenres();
-    getSingleTitle(props.match.params.type, props.match.params.id);
+    getSingleTitle(props.match.params.type, props.match.params.id, getIP());
     if (user) getWatchLists();
     //eslint-disable-next-line
   }, []);
@@ -111,9 +112,10 @@ export const SingleTitle = props => {
     <Fragment>
       {singleTitle && (
         <Fragment>
-          {singleTitle.backdrops && (
+          {/* {singleTitle.backdrops && (
             <MyGallery photos={singleTitle.backdrops} />
-          )}
+          )} */}
+          {singleTitle.backdrops && <FlickCarousel singleTitle={singleTitle} />}
           <div className="back d-block d-lg-none d-md-none">
             <Link to="/search">
               <svg
@@ -185,6 +187,7 @@ export const SingleTitle = props => {
                     <MoviesDetails singleTitle={singleTitle} genres={genres} />
                   </div>
                 )}
+
                 {singleTitle && (
                   <Credits
                     singleTitle={singleTitle}
@@ -201,6 +204,22 @@ export const SingleTitle = props => {
                   {singleTitle.short_description &&
                     singleTitle.short_description}
                 </div>
+
+                {singleTitle && singleTitle.videoSource && (
+                  <Fragment>
+                    {" "}
+                    <p className="title-text">{singleTitle.object_type}</p>
+                    <iframe
+                      src={singleTitle.videoSource}
+                      frameBorder="0"
+                      className="videoSource"
+                      title={singleTitle.videoSource}
+                      allowFullScreen={true}
+                      scrolling="no"
+                    ></iframe>
+                  </Fragment>
+                )}
+
                 {singleTitle.recommendation.results.length > 0 && (
                   <Recommendation singleTitle={singleTitle} />
                 )}

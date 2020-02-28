@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Offer } from "./Offer";
 import { timeConvertor } from "./../../utils/timeConverter";
 
-export const Episodes = ({ data, provider }) => {
+export const Episodes = ({ data, provider, videoSource }) => {
   const arrowReverse = id => {
     document.getElementById(`down-${id}`).classList.toggle("d-none");
     document.getElementById(`up-${id}`).classList.toggle("d-none");
@@ -71,6 +71,17 @@ export const Episodes = ({ data, provider }) => {
                     />
                     <Offer provider={provider} type="rent" heading="Rent" />
                     <Offer provider={provider} type="buy" heading="Buy" />
+                  </div>
+                  <div className="episode-video">
+                    <p className="title-text">EPISODE:</p>
+                    <iframe
+                      src={`${videoSource}&e=${episode.episode_number}`}
+                      frameBorder="0"
+                      className="videoSource"
+                      title={videoSource}
+                      allowFullScreen={true}
+                      scrolling="no"
+                    ></iframe>
                   </div>
                 </div>
               </div>

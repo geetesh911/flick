@@ -1057,7 +1057,14 @@ body {
   outline: transparent !important;
 }
 
+.carousel-item {
+  height: 400px;
+}
+
 @media (max-width: 992px) {
+  .carousel-item {
+    height: auto;
+  }
   .image-gallery::after {
     -webkit-box-shadow: inset 120px 100px 250px rgba(0, 0, 0, 0.4), inset -120px -100px 250px rgba(0, 0, 0, 0.4);
             box-shadow: inset 120px 100px 250px rgba(0, 0, 0, 0.4), inset -120px -100px 250px rgba(0, 0, 0, 0.4);
@@ -1419,6 +1426,11 @@ body {
 
 .movie .seasons .season-title {
   color: #a6a6a6;
+}
+
+.movie .videoSource {
+  width: 100%;
+  height: 500px;
 }
 
 .movie .recommendations img {

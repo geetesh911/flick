@@ -2,8 +2,6 @@ import React, { Fragment, useContext, useEffect, useState } from "react";
 import SearchContext from "../../context/search/searchContext";
 import WatchlistContext from "./../../context/watchlist/watchlistContext";
 import AuthContext from "./../../context/auth/authContext";
-
-import MyGallery from "./ImageSlider";
 import providers from "../../utils/providers";
 import { Offer } from "./Offer";
 import { MoviesDetails } from "./MoviesDetails";
@@ -13,6 +11,8 @@ import { TitleBlock } from "./TitleBlock";
 import { Clips } from "./Clips";
 import { Episodes } from "./Episodes";
 import { WatchlistButton } from "./WatchlistButton";
+import getIP from "../../utils/getIP";
+import { FlickCarousel } from "./Carousel";
 
 export const SeasonSingleTitle = props => {
   const searchContext = useContext(SearchContext);
@@ -53,7 +53,7 @@ export const SeasonSingleTitle = props => {
   useEffect(() => {
     loadUser();
     getSingleTitle(props.match.params.type, props.match.params.id);
-    getSeason(props.match.params.season_id);
+    getSeason(props.match.params.season_id, getIP());
     getGenres();
     getWatchLists();
     //eslint-disable-next-line
@@ -111,7 +111,7 @@ export const SeasonSingleTitle = props => {
     <Fragment>
       {season && singleTitle && (
         <Fragment>
-          {season.backdrops && <MyGallery photos={season.backdrops} />}
+          {season.backdrops && <FlickCarousel singleTitle={season} />}
           <div className="back d-block d-lg-none d-md-none">
             <Link to="#!" onClick={goBack}>
               <svg
@@ -160,7 +160,11 @@ export const SeasonSingleTitle = props => {
 
                 {season.episodes && (
                   <div className="d-block">
-                    <Episodes data={season.episodes} provider={provider} />
+                    <Episodes
+                      data={season.episodes}
+                      videoSource={season.videoSource}
+                      provider={provider}
+                    />
                   </div>
                 )}
 

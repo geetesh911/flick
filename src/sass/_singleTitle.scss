@@ -338,6 +338,10 @@
       color: $whiteThirdLayer;
     }
   }
+  .videoSource {
+    width: 100%;
+    height: 500px;
+  }
   .recommendations {
     img {
       width: auto;
@@ -371,6 +375,9 @@
         margin: auto !important;
       }
     }
+    // .videoSource {
+    //   height: 250px;
+    // }
     .mobile-poster {
       margin-top: 25px;
       width: 100%;
