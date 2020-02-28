@@ -116,7 +116,15 @@ export const SingleTitle = props => {
           {/* {singleTitle.backdrops && (
             <MyGallery photos={singleTitle.backdrops} />
           )} */}
-          {singleTitle.backdrops && <FlickCarousel singleTitle={singleTitle} />}
+          {singleTitle.backdrops ? (
+            <FlickCarousel singleTitle={singleTitle} />
+          ) : (
+            <img
+              src="https://fundehitus.ee/raua20/wp-content/uploads/2016/12/noimage.gif"
+              alt=""
+              className="no-image"
+            />
+          )}
           <Link to="/search">
             <div className="back d-block d-lg-none d-md-none">
               <svg

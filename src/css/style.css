@@ -1057,8 +1057,10 @@ body {
   outline: transparent !important;
 }
 
-.carousel-item {
+.carousel-item,
+.no-image {
   height: 400px;
+  width: 100%;
 }
 
 .carousel-control-next,
@@ -1068,7 +1070,9 @@ body {
 }
 
 @media (max-width: 992px) {
-  .carousel-item {
+  .carousel-item,
+  .no-image {
+    width: 100%;
     height: auto;
   }
   .image-gallery::after {
