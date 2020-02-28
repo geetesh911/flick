@@ -5,15 +5,10 @@ import SearchContext from "./../../context/search/searchContext";
 
 export const Search = () => {
   const [query, setQuery] = useState("");
+  const [load, setLoad] = useState(false);
 
   const searchContext = useContext(SearchContext);
-  const {
-    getData,
-    data,
-    loading,
-    getSingleTitle,
-    clearSingleTitle
-  } = searchContext;
+  const { getData, data, getSingleTitle, clearSingleTitle } = searchContext;
 
   useEffect(() => {
     clearSingleTitle();
@@ -24,11 +19,12 @@ export const Search = () => {
     setQuery(e.target.value);
   };
 
-  const handleKeyDown = event => {
+  const handleKeyDown = async event => {
     const { keyCode } = event;
-
     if (keyCode === 13) {
-      getData(query);
+      setLoad(true);
+      await getData(query);
+      setLoad(false);
     }
   };
 
@@ -55,7 +51,7 @@ export const Search = () => {
         </div>
       </div>
 
-      {!loading && data && (
+      {!load && data && (
         <div className="search-area">
           {data.map(card => (
             <SearchCardItem
@@ -67,7 +63,7 @@ export const Search = () => {
         </div>
       )}
 
-      {loading && !data && <Spinner />}
+      {load && <Spinner />}
     </div>
   );
 };
