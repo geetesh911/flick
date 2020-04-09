@@ -8,10 +8,16 @@ Flick is a movie search website where you can search your favorite movies and tv
 
 ### `Technologies Used`
 
-SCSS
-Bootstrap
-Javascript
-ReactJS
-NodeJS
-Netlify
-Heroku
+#### `SCSS`
+
+#### `Bootstrap`
+
+#### `Javascript`
+
+#### `Reactjs`
+
+#### `Nodejs`
+
+#### `Heroku`
+
+#### `Netlify`
