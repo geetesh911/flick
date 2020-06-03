@@ -15,7 +15,7 @@ export const SearchCardItem = ({ data, getSingleTitle }) => {
     original_release_year,
     offers,
     object_type,
-    id
+    id,
   } = data;
 
   let imdb = "";
@@ -23,7 +23,7 @@ export const SearchCardItem = ({ data, getSingleTitle }) => {
   let tmdb = "";
 
   scoring &&
-    scoring.forEach(score => {
+    scoring.forEach((score) => {
       if (score.provider_type === "imdb:score") imdb = score.value;
       if (score.provider_type === "tomato:meter") rottenTomatoes = score.value;
       if (score.provider_type === "tmdb:score") tmdb = score.value;
@@ -33,7 +33,7 @@ export const SearchCardItem = ({ data, getSingleTitle }) => {
   watchlist &&
     data &&
     watchlist.length > 0 &&
-    watchlist.forEach(list => {
+    watchlist.forEach((list) => {
       if (list.id === id) {
         exist = true;
       }
@@ -74,7 +74,7 @@ export const SearchCardItem = ({ data, getSingleTitle }) => {
                 {provider.length} offers available
               </Link>
               {provider &&
-                provider.map(p => (
+                provider.map((p) => (
                   <a
                     href={p.url}
                     key={p.id}

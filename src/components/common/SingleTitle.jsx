@@ -228,9 +228,10 @@ export const SingleTitle = (props) => {
                   </Fragment>
                 )}
 
-                {singleTitle.recommendation.results.length > 0 && (
-                  <Recommendation singleTitle={singleTitle} />
-                )}
+                {singleTitle.recommendation &&
+                  singleTitle.recommendation.results.length > 0 && (
+                    <Recommendation singleTitle={singleTitle} />
+                  )}
                 <div className="bookmark-icon">
                   <img
                     src={singleTitle.poster}

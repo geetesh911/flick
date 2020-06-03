@@ -11,7 +11,7 @@ export const DashBoard = () => {
     getTrendingMovies,
     upcomingMovies,
     topRatedMovies,
-    trendingMovies
+    trendingMovies,
   } = startContext;
   useEffect(() => {
     getUpcomingMovies();
@@ -19,6 +19,7 @@ export const DashBoard = () => {
     getTrendingMovies();
     //eslint-disable-next-line
   }, []);
+
   return (
     <div className="dashboard">
       <div className="dashboard-content">

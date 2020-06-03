@@ -5,6 +5,7 @@ const getIP = async () => {
     let ipAddress = await fetch(`https://api6.ipify.org/?format=json`);
     ipAddress = await ipAddress.json();
     ip = ipAddress.ip;
+    console.log(ip);
   } catch (error) {
     console.log("object");
     let ipAddress = await fetch(`https://v4.ident.me/.json`);
