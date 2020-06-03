@@ -196,15 +196,17 @@ export const SingleTitle = (props) => {
                   </div>
                 )}
 
-                {singleTitle && singleTitle.cast.length > 0 && (
-                  <Credits
-                    singleTitle={singleTitle}
-                    handleShow={handleShow}
-                    handleClose={handleClose}
-                    person={person}
-                    show={show}
-                  />
-                )}
+                {singleTitle &&
+                  singleTitle.cast &&
+                  singleTitle.cast.cast.length > 0 && (
+                    <Credits
+                      singleTitle={singleTitle}
+                      handleShow={handleShow}
+                      handleClose={handleClose}
+                      person={person}
+                      show={show}
+                    />
+                  )}
                 {singleTitle.short_description && (
                   <p className="title-text">Synopsis</p>
                 )}
