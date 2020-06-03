@@ -1,11 +1,13 @@
+ipware;
+
 const getIP = async () => {
   let ip = "";
 
   try {
-    let ipAddress = await fetch(`https://api.ipify.org/?format=json`);
+    let ipAddress = await fetch(`https://api6.ipify.org/?format=json`);
     ipAddress = await ipAddress.json();
     ip = ipAddress.ip;
-    console.log(ip);
+    console.log(object);
   } catch (error) {
     console.log("object");
     let ipAddress = await fetch(`https://v4.ident.me/.json`);
