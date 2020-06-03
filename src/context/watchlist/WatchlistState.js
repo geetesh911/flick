@@ -9,16 +9,22 @@ import {
   GET_WATCHLIST_FAILED,
   DELETE_WATCHLIST,
   DELETE_WATCHLIST_FAILED,
-  CLEAR_WATCHLIST
+  CLEAR_WATCHLIST,
 } from "../types";
 
-const API_URL = "https://flick-movie-api.herokuapp.com";
+let API_URL = "";
 
-const WatchlistState = props => {
+if (process.env.NODE_ENV === "production") {
+  API_URL = "https://flick-movie-api.herokuapp.com";
+} else {
+  API_URL = "http://localhost:5000";
+}
+
+const WatchlistState = (props) => {
   const initialState = {
     watchlist: [],
     loading: true,
-    error: null
+    error: null,
   };
 
   const [state, dispatch] = useReducer(watchlistReducer, initialState);
@@ -32,11 +38,11 @@ const WatchlistState = props => {
     }
   };
 
-  const addWatchList = async data => {
+  const addWatchList = async (data) => {
     const config = {
       headers: {
-        "Content-Type": "application/json"
-      }
+        "Content-Type": "application/json",
+      },
     };
     try {
       const res = await Axios.post(`${API_URL}/api/watchlist`, data, config);
@@ -50,7 +56,7 @@ const WatchlistState = props => {
     dispatch({ type: CLEAR_WATCHLIST });
   };
 
-  const deleteWatchList = async id => {
+  const deleteWatchList = async (id) => {
     try {
       await Axios.delete(`${API_URL}/api/watchlist/${id}`);
 
@@ -69,7 +75,7 @@ const WatchlistState = props => {
         getWatchLists,
         addWatchList,
         deleteWatchList,
-        clearWatchList
+        clearWatchList,
       }}
     >
       {props.children}

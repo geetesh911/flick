@@ -15,12 +15,18 @@ import {
   GET_PERSON_FAILED,
   GET_SEASON,
   GET_SEASON_FAILED,
-  CLEAR_SEASON
+  CLEAR_SEASON,
 } from "./../types";
 
-const API_URL = "https://flick-movie-api.herokuapp.com";
+let API_URL = "";
 
-const SearchState = props => {
+if (process.env.NODE_ENV === "production") {
+  API_URL = "https://flick-movie-api.herokuapp.com";
+} else {
+  API_URL = "http://localhost:5000";
+}
+
+const SearchState = (props) => {
   const initialState = {
     data: null,
     error: null,
@@ -28,17 +34,17 @@ const SearchState = props => {
     genres: null,
     person: null,
     season: null,
-    loading: false
+    loading: true,
   };
 
   const [state, dispatch] = useReducer(searchReducer, initialState);
 
   // get searched movies
-  const getData = async query => {
+  const getData = async (query) => {
     try {
       const res = await Axios.get(`${API_URL}/api/search?q=${query}`);
 
-      res.data.items.forEach(searchResult => {
+      res.data.items.forEach((searchResult) => {
         if (searchResult.poster) {
           searchResult.poster = `https://images.justwatch.com${searchResult.poster}`;
           let splittedPosterURL = searchResult.poster.split("/");
@@ -53,11 +59,10 @@ const SearchState = props => {
     }
   };
 
-  const getSingleTitle = async (type, id, ip) => {
-    ip = await ip;
+  const getSingleTitle = async (type, id) => {
     try {
       const res = await Axios.get(
-        `${API_URL}/api/title?ctype=${type}&title_id=${id}&ipAdd=${ip}`
+        `${API_URL}/api/title?ctype=${type}&title_id=${id}`
       );
 
       dispatch({ type: SINGLE_TITLE, payload: res.data });
@@ -80,7 +85,7 @@ const SearchState = props => {
     }
   };
 
-  const getPerson = async id => {
+  const getPerson = async (id) => {
     try {
       const res = await Axios.get(`${API_URL}/api/person?person_id=${id}`);
 
@@ -94,12 +99,9 @@ const SearchState = props => {
     dispatch({ type: CLEAR_PERSON });
   };
 
-  const getSeason = async (id, ip) => {
-    ip = await ip;
+  const getSeason = async (id) => {
     try {
-      const res = await Axios.get(
-        `${API_URL}/api/season?season_id=${id}&ipAdd=${ip}`
-      );
+      const res = await Axios.get(`${API_URL}/api/season?season_id=${id}`);
 
       dispatch({ type: GET_SEASON, payload: res.data });
     } catch (err) {
@@ -128,7 +130,7 @@ const SearchState = props => {
         getSeason,
         clearPerson,
         clearSeason,
-        clearSingleTitle
+        clearSingleTitle,
       }}
     >
       {props.children}

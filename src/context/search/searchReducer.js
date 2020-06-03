@@ -11,7 +11,7 @@ import {
   GET_PERSON_FAILED,
   GET_SEASON,
   GET_SEASON_FAILED,
-  CLEAR_SEASON
+  CLEAR_SEASON,
 } from "../types";
 
 export default (state, action) => {
@@ -20,49 +20,49 @@ export default (state, action) => {
       return {
         ...state,
         data: action.payload,
-        loading: false
+        loading: false,
       };
     case SINGLE_TITLE:
       return {
         ...state,
         singleTitle: action.payload,
-        loading: false
+        loading: false,
       };
     case GET_GENRES:
       return {
         ...state,
         genres: action.payload,
-        loading: false
+        loading: false,
       };
     case GET_PERSON:
       return {
         ...state,
         person: action.payload,
-        loading: false
+        loading: false,
       };
     case GET_SEASON:
       return {
         ...state,
         season: action.payload,
-        loading: false
+        loading: false,
       };
     case CLEAR_SINGLE_TITLE:
       return {
         ...state,
         singleTitle: null,
-        loading: false
+        loading: false,
       };
     case CLEAR_PERSON:
       return {
         ...state,
         person: null,
-        loading: false
+        loading: false,
       };
     case CLEAR_SEASON:
       return {
         ...state,
         season: null,
-        loading: false
+        loading: false,
       };
     case SEARCH_FAILED:
     case SINGLE_TITLE_FAILED:
@@ -71,12 +71,12 @@ export default (state, action) => {
     case GET_SEASON_FAILED:
       return {
         ...state,
-        error: action.payload
+        error: action.payload,
       };
 
     default:
       return {
-        ...state
+        ...state,
       };
   }
 };

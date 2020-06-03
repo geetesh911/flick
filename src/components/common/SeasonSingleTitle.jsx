@@ -11,11 +11,10 @@ import { TitleBlock } from "./TitleBlock";
 import { Clips } from "./Clips";
 import { Episodes } from "./Episodes";
 import { WatchlistButton } from "./WatchlistButton";
-import getIP from "../../utils/getIP";
 import { FlickCarousel } from "./Carousel";
 import Spinner from "./Spinner";
 
-export const SeasonSingleTitle = props => {
+export const SeasonSingleTitle = (props) => {
   const searchContext = useContext(SearchContext);
   const watchlistContext = useContext(WatchlistContext);
   const authContext = useContext(AuthContext);
@@ -26,7 +25,7 @@ export const SeasonSingleTitle = props => {
     addWatchList,
     getWatchLists,
     deleteWatchList,
-    watchlist
+    watchlist,
   } = watchlistContext;
 
   const [show, setShow] = useState(false);
@@ -40,21 +39,21 @@ export const SeasonSingleTitle = props => {
     genres,
     getPerson,
     clearPerson,
-    season
+    season,
   } = searchContext;
 
   const handleClose = () => {
     clearPerson();
     setShow(false);
   };
-  const handleShow = id => {
+  const handleShow = (id) => {
     getPerson(id);
     setShow(true);
   };
   useEffect(() => {
     loadUser();
     getSingleTitle(props.match.params.type, props.match.params.id);
-    getSeason(props.match.params.season_id, getIP());
+    getSeason(props.match.params.season_id);
     getGenres();
     getWatchLists();
     //eslint-disable-next-line
@@ -67,7 +66,7 @@ export const SeasonSingleTitle = props => {
     user &&
     singleTitle &&
     watchlist.length > 0 &&
-    watchlist.forEach(list => {
+    watchlist.forEach((list) => {
       if (list.id === singleTitle.id) {
         exist = true;
         existID = list._id;
@@ -87,7 +86,7 @@ export const SeasonSingleTitle = props => {
       scoring,
       offers,
       original_release_year,
-      object_type
+      object_type,
     } = singleTitle;
 
     const watchlistData = {
@@ -97,7 +96,7 @@ export const SeasonSingleTitle = props => {
       scoring,
       offers,
       original_release_year,
-      object_type
+      object_type,
     };
     if (user) addWatchList(watchlistData);
     else props.history.push("/login");

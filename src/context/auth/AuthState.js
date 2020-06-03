@@ -11,18 +11,23 @@ import {
   LOGIN_SUCCESS,
   LOGIN_FAIL,
   LOGOUT,
-  CLEAR_ERRORS
+  CLEAR_ERRORS,
 } from "../types";
 
-const API_URL = "https://flick-movie-api.herokuapp.com";
+let API_URL = "";
+if (process.env.NODE_ENV === "production") {
+  API_URL = "https://flick-movie-api.herokuapp.com";
+} else {
+  API_URL = "http://localhost:5000";
+}
 
-const AuthState = props => {
+const AuthState = (props) => {
   const initialState = {
     token: localStorage.getItem("token"),
     isAuthenticated: null,
     loading: true,
     user: null,
-    error: null
+    error: null,
   };
 
   const [state, dispatch] = useReducer(authReducer, initialState);
@@ -40,15 +45,15 @@ const AuthState = props => {
   };
 
   // Register User
-  const register = async formData => {
+  const register = async (formData) => {
     formData.name = formData.name.trim();
     formData.email = formData.email.trim();
     formData.password = formData.password.trim();
 
     const config = {
       headers: {
-        "Content-Type": "application/json"
-      }
+        "Content-Type": "application/json",
+      },
     };
     try {
       const res = await axios.post(`${API_URL}/api/users`, formData, config);
@@ -61,14 +66,14 @@ const AuthState = props => {
   };
 
   // Login User
-  const login = async formData => {
+  const login = async (formData) => {
     formData.email = formData.email.trim();
     formData.password = formData.password.trim();
 
     const config = {
       headers: {
-        "Content-Type": "application/json"
-      }
+        "Content-Type": "application/json",
+      },
     };
     try {
       const res = await axios.post(`${API_URL}/api/auth`, formData, config);
@@ -102,7 +107,7 @@ const AuthState = props => {
         loadUser,
         login,
         logout,
-        clearErrors
+        clearErrors,
       }}
     >
       {props.children}

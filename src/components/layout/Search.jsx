@@ -15,11 +15,11 @@ export const Search = () => {
     //eslint-disable-next-line
   }, []);
 
-  const onChange = e => {
+  const onChange = (e) => {
     setQuery(e.target.value);
   };
 
-  const handleKeyDown = async event => {
+  const handleKeyDown = async (event) => {
     const { keyCode } = event;
     if (keyCode === 13) {
       setLoad(true);
@@ -54,13 +54,19 @@ export const Search = () => {
 
       {!load && data && (
         <div className="search-area">
-          {data.map(card => (
-            <SearchCardItem
-              key={card.id}
-              data={card}
-              getSingleTitle={getSingleTitle}
-            />
-          ))}
+          {data.length > 0 ? (
+            data.map((card) => (
+              <SearchCardItem
+                key={card.id}
+                data={card}
+                getSingleTitle={getSingleTitle}
+              />
+            ))
+          ) : (
+            <div className="list-empty-msg">
+              No data available with that name
+            </div>
+          )}
         </div>
       )}
 

@@ -12,11 +12,10 @@ import { Clips } from "./Clips";
 import { Recommendation } from "./Recommendation";
 import { WatchlistButton } from "./WatchlistButton";
 import AuthContext from "./../../context/auth/authContext";
-import getIP from "./../../utils/getIP";
 import { FlickCarousel } from "./Carousel";
 import Spinner from "./Spinner";
 
-export const SingleTitle = props => {
+export const SingleTitle = (props) => {
   const searchContext = useContext(SearchContext);
   const watchlistContext = useContext(WatchlistContext);
   const authContext = useContext(AuthContext);
@@ -25,7 +24,7 @@ export const SingleTitle = props => {
     addWatchList,
     getWatchLists,
     deleteWatchList,
-    watchlist
+    watchlist,
   } = watchlistContext;
   const { loadUser, user } = authContext;
 
@@ -40,14 +39,14 @@ export const SingleTitle = props => {
     getPerson,
     getSeason,
     clearPerson,
-    clearSeason
+    clearSeason,
   } = searchContext;
 
   const handleClose = () => {
     setShow(false);
     clearPerson();
   };
-  const handleShow = id => {
+  const handleShow = (id) => {
     getPerson(id);
     setShow(true);
   };
@@ -55,7 +54,7 @@ export const SingleTitle = props => {
     loadUser();
     clearSeason();
     getGenres();
-    getSingleTitle(props.match.params.type, props.match.params.id, getIP());
+    getSingleTitle(props.match.params.type, props.match.params.id);
     if (user) getWatchLists();
     //eslint-disable-next-line
   }, []);
@@ -67,7 +66,7 @@ export const SingleTitle = props => {
     user &&
     singleTitle &&
     watchlist.length > 0 &&
-    watchlist.forEach(list => {
+    watchlist.forEach((list) => {
       if (list.id === singleTitle.id) {
         exist = true;
         existID = list._id;
@@ -88,7 +87,7 @@ export const SingleTitle = props => {
       scoring,
       offers,
       original_release_year,
-      object_type
+      object_type,
     } = singleTitle;
 
     const watchlistData = {
@@ -98,7 +97,7 @@ export const SingleTitle = props => {
       scoring,
       offers,
       original_release_year,
-      object_type
+      object_type,
     };
     if (user) addWatchList(watchlistData);
     else props.history.push("/login");
@@ -245,7 +244,9 @@ export const SingleTitle = props => {
           </div>
         </Fragment>
       ) : (
-        <Spinner />
+        <Fragment>
+          <Spinner />
+        </Fragment>
       )}
     </Fragment>
   );

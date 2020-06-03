@@ -1,17 +1,17 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, Fragment } from "react";
 import WatchlistContext from "./../../context/watchlist/watchlistContext";
 import SearchContext from "./../../context/search/searchContext";
 import { SearchCardItem } from "../cards/SearchCardItem";
 import AuthContext from "./../../context/auth/authContext";
 import Spinner from "../common/Spinner";
 
-export const WatchList = props => {
+export const WatchList = (props) => {
   const watchlistContext = useContext(WatchlistContext);
   const searchContext = useContext(SearchContext);
   const authContext = useContext(AuthContext);
 
   const { loadUser, user } = authContext;
-  const { getWatchLists, watchlist } = watchlistContext;
+  const { getWatchLists, watchlist, loading } = watchlistContext;
   const { getSingleTitle } = searchContext;
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export const WatchList = props => {
     <div className="search-area">
       <div className="title-bar">My List</div>
       {watchlist.length > 0 ? (
-        watchlist.map(list => (
+        watchlist.map((list) => (
           <SearchCardItem
             data={list}
             key={list.id}
@@ -34,7 +34,15 @@ export const WatchList = props => {
           />
         ))
       ) : (
-        <Spinner />
+        <Fragment>
+          {loading ? (
+            <Spinner />
+          ) : (
+            <div className="list-empty-msg">
+              No movies or series in the list
+            </div>
+          )}
+        </Fragment>
       )}
     </div>
   );

@@ -7,12 +7,15 @@ export const MovieCardArea = ({ movieData, heading, release, name }) => {
       <div className="startMovies">
         <div className="startMovies-content">
           {movieData &&
-            movieData.results.map(movie => (
+            movieData.results.map((movie) => (
               <Fragment key={movie.id}>
                 {movie && (
                   <div className="d-inline-block mr-3 poster">
                     <img
-                      src={movie.poster_path}
+                      src={
+                        movie.poster_path ||
+                        `https://media.comicbook.com/files/img/default-movie.png`
+                      }
                       alt=""
                       height="200px"
                       width="150px"

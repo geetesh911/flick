@@ -9,4 +9,12 @@
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
   }
+  .list-empty-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 120px);
+    font-size: 20px;
+    color: rgba($whiteSecondLayer, 0.5);
+  }
 }
