@@ -196,7 +196,7 @@ export const SingleTitle = (props) => {
                   </div>
                 )}
 
-                {singleTitle && (
+                {singleTitle && singleTitle.cast.length > 0 && (
                   <Credits
                     singleTitle={singleTitle}
                     handleShow={handleShow}
