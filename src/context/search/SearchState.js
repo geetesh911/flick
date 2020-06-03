@@ -17,6 +17,7 @@ import {
   GET_SEASON_FAILED,
   CLEAR_SEASON,
 } from "./../types";
+import getIP from "./../../utils/getIP";
 
 let API_URL = "";
 
@@ -60,9 +61,10 @@ const SearchState = (props) => {
   };
 
   const getSingleTitle = async (type, id) => {
+    const ip = await getIP();
     try {
       const res = await Axios.get(
-        `${API_URL}/api/title?ctype=${type}&title_id=${id}`
+        `${API_URL}/api/title?ctype=${type}&title_id=${id}&ipAdd=${ip}`
       );
 
       dispatch({ type: SINGLE_TITLE, payload: res.data });
@@ -100,8 +102,11 @@ const SearchState = (props) => {
   };
 
   const getSeason = async (id) => {
+    const ip = await getIP();
     try {
-      const res = await Axios.get(`${API_URL}/api/season?season_id=${id}`);
+      const res = await Axios.get(
+        `${API_URL}/api/season?season_id=${id}&ipAdd=${ip}`
+      );
 
       dispatch({ type: GET_SEASON, payload: res.data });
     } catch (err) {
