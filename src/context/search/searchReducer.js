@@ -11,6 +11,10 @@ import {
   GET_PERSON_FAILED,
   GET_SEASON,
   GET_SEASON_FAILED,
+  GET_PROVIDERS,
+  GET_PROVIDERS_FAILED,
+  GET_PROVIDER_DATA,
+  GET_PROVIDER_DATA_FAILED,
   CLEAR_SEASON,
 } from "../types";
 
@@ -46,6 +50,18 @@ export default (state, action) => {
         season: action.payload,
         loading: false,
       };
+    case GET_PROVIDERS:
+      return {
+        ...state,
+        providers: action.payload,
+        loading: false,
+      };
+    case GET_PROVIDER_DATA:
+      return {
+        ...state,
+        data: action.payload,
+        loading: false,
+      };
     case CLEAR_SINGLE_TITLE:
       return {
         ...state,
@@ -69,6 +85,8 @@ export default (state, action) => {
     case GET_GENRES_FAILED:
     case GET_PERSON_FAILED:
     case GET_SEASON_FAILED:
+    case GET_PROVIDERS_FAILED:
+    case GET_PROVIDER_DATA_FAILED:
       return {
         ...state,
         error: action.payload,

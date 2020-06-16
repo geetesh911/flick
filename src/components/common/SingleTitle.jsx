@@ -172,6 +172,7 @@ export const SingleTitle = (props) => {
                 {provider.length > 0 && <p className="title-text">Watch Now</p>}
                 <div className="offers">
                   <Offer provider={provider} type="flatrate" heading="Stream" />
+                  <Offer provider={provider} type="ads" heading="Stream" />
                   <Offer provider={provider} type="rent" heading="Rent" />
                   <Offer provider={provider} type="buy" heading="Buy" />
                 </div>

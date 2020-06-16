@@ -75,6 +75,22 @@ const providers = (offers, filter) => {
           id: offer.provider_id,
         });
         break;
+      case 309:
+        providers.push({
+          icon: "https://images.justwatch.com/icon/138047862/s100",
+          url: offer.urls.standard_web,
+          type: offer.monetization_type,
+          id: offer.provider_id,
+        });
+        break;
+      case 315:
+        providers.push({
+          icon: "https://images.justwatch.com/icon/141253805/s100",
+          url: offer.urls.standard_web,
+          type: offer.monetization_type,
+          id: offer.provider_id,
+        });
+        break;
       case 218:
         providers.push({
           icon: "https://images.justwatch.com/icon/82869265/s100",
@@ -86,6 +102,30 @@ const providers = (offers, filter) => {
       case 232:
         providers.push({
           icon: "https://images.justwatch.com/icon/93795879/s100",
+          url: offer.urls.standard_web,
+          type: offer.monetization_type,
+          id: offer.provider_id,
+        });
+        break;
+      case 2:
+        providers.push({
+          icon: "https://images.justwatch.com/icon/430995/s100",
+          url: offer.urls.standard_web,
+          type: offer.monetization_type,
+          id: offer.provider_id,
+        });
+        break;
+      case 350:
+        providers.push({
+          icon: "https://images.justwatch.com/icon/152862153/s100",
+          url: offer.urls.standard_web,
+          type: offer.monetization_type,
+          id: offer.provider_id,
+        });
+        break;
+      case 11:
+        providers.push({
+          icon: "https://images.justwatch.com/icon/164970114/s100",
           url: offer.urls.standard_web,
           type: offer.monetization_type,
           id: offer.provider_id,
@@ -126,6 +166,14 @@ const providers = (offers, filter) => {
       case 237:
         providers.push({
           icon: "https://images.justwatch.com/icon/99832956/s100",
+          url: offer.urls.standard_web,
+          type: offer.monetization_type,
+          id: offer.provider_id,
+        });
+        break;
+      case 73:
+        providers.push({
+          icon: "https://images.justwatch.com/icon/104966985/s100",
           url: offer.urls.standard_web,
           type: offer.monetization_type,
           id: offer.provider_id,
