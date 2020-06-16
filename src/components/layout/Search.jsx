@@ -6,7 +6,7 @@ import $ from "jquery";
 
 export const Search = () => {
   const [query, setQuery] = useState("");
-  const [load, setLoad] = useState(true);
+  const [load, setLoad] = useState(false);
   const [activeProvider, setActiveProvider] = useState("");
 
   const searchContext = useContext(SearchContext);
