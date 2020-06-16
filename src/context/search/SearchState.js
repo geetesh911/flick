@@ -33,7 +33,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 if (process.env.NODE_ENV === "production") {
-  PY_API_URL = "https://flick-py-api.herokuapp.com/";
+  PY_API_URL = "https://flick-py-api.herokuapp.com";
 } else {
   PY_API_URL = "http://localhost:8000";
 }
