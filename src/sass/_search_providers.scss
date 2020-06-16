@@ -149,8 +149,10 @@
 }
 
 @media (max-width: 768px) {
-  .self-gallery {
+  .search_providers_list {
+    padding: 0 10px !important;
     .items {
+      padding: 0 10px !important;
       flex: 0 0 100%;
       max-width: 100%;
     }
