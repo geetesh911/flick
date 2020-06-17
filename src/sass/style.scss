@@ -41,12 +41,16 @@ $aquaThirdLayer: #2cb0ba;
 @import "more";
 @import "mylist";
 @import "search_providers";
+@import "flippingCards";
 
 // CSS
 body {
   // background-color: #08111d;
   background-color: $backgroundColor;
   color: white;
+}
+html {
+  overflow-x: hidden !important;
 }
 ::-webkit-scrollbar {
   display: none !important;

@@ -34,7 +34,7 @@ const WatchlistState = (props) => {
       const res = await Axios.get(`${API_URL}/api/watchlist`);
       dispatch({ type: GET_WATCHLIST, payload: res.data });
     } catch (err) {
-      dispatch({ type: GET_WATCHLIST_FAILED, payload: err.response.msg });
+      dispatch({ type: GET_WATCHLIST_FAILED, payload: err.response.data.msg });
     }
   };
 

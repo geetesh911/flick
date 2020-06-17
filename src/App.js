@@ -18,6 +18,7 @@ import { More } from "./components/layout/More";
 import WatchlistState from "./context/watchlist/WatchlistState";
 import setAuthToken from "./utils/setAuthToken";
 import { Alerts } from "./components/common/Alerts";
+// import { Music } from "./components/layout/Music";
 
 if (localStorage.token) setAuthToken(localStorage.token);
 
@@ -37,6 +38,7 @@ function App() {
                     <Route exact path="/login" component={Login} />
                     <Route exact path="/register" component={Register} />
                     <Route exact path="/search" component={Search} />
+                    {/* <Route exact path="/music" component={Music} /> */}
                     <Route exact path="/:type/:id" component={SingleTitle} />
                     <Route
                       exact

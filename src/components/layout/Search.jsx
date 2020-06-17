@@ -1,13 +1,18 @@
 import React, { useState, useContext, useEffect } from "react";
-import { SearchCardItem } from "../cards/SearchCardItem";
+// import { SearchCardItem } from "../cards/SearchCardItem";
 import Spinner from "./../common/Spinner";
 import SearchContext from "./../../context/search/searchContext";
+import WatchlistContext from "./../../context/watchlist/watchlistContext";
 import $ from "jquery";
+import { FlippingCard } from "../common/FlippingCard";
 
 export const Search = () => {
   const [query, setQuery] = useState("");
   const [load, setLoad] = useState(false);
   const [activeProvider, setActiveProvider] = useState("");
+
+  const watchlistContext = useContext(WatchlistContext);
+  const { getWatchLists } = watchlistContext;
 
   const searchContext = useContext(SearchContext);
   const {
@@ -23,6 +28,7 @@ export const Search = () => {
   useEffect(() => {
     clearSingleTitle();
     getProviders();
+    getWatchLists();
     //eslint-disable-next-line
   }, []);
 
@@ -119,22 +125,31 @@ export const Search = () => {
       </div>
 
       {!load && data && (
-        <div className="search-area">
-          {data.length > 0 ? (
-            data.map((card) => (
-              <SearchCardItem
-                key={card.id}
-                data={card}
-                getSingleTitle={getSingleTitle}
-              />
-            ))
-          ) : (
-            <div className="list-empty-msg">
-              No data available with that name
-            </div>
-          )}
+        <div className="container search-container">
+          <div className="search-area row mb-5">
+            {data.length > 0 ? (
+              data.map((card) => (
+                // <SearchCardItem
+                //   key={card.id}
+                //   data={card}
+                //   getSingleTitle={getSingleTitle}
+                // />
+                <FlippingCard
+                  key={card.id}
+                  data={card}
+                  getSingleTitle={getSingleTitle}
+                />
+              ))
+            ) : (
+              <div className="list-empty-msg">
+                No data available with that name
+              </div>
+            )}
+          </div>
         </div>
       )}
+
+      {/* <FlippingCard /> */}
 
       {load && <Spinner />}
     </div>

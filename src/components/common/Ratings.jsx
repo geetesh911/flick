@@ -4,12 +4,12 @@ export const Ratings = ({ imdb, rottenTomatoes, tmdb }) => {
   return (
     <div className="ratings">
       {imdb && (
-        <div className="imdb d-inline">
+        <div className="imdb">
           <img
             src="https://www.justwatch.com/appassets/img/imdb-logo.png"
             alt=""
           />
-          <p className="d-inline">{imdb}</p>
+          <p className="rate">{imdb}</p>
         </div>
       )}
       {rottenTomatoes && (
