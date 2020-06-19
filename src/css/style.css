@@ -161,6 +161,13 @@ body {
   border-radius: 0 20px 20px 0;
 }
 
+.dashboard .row .dashboard-tagline .bottomDIV .items {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 83%;
+          flex: 0 0 83%;
+  max-width: 83%;
+}
+
 .dashboard .row .dashboard-tv {
   overflow-x: hidden;
   background-size: 1100px 700px;
@@ -383,14 +390,8 @@ body {
 .search .searchBox input:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-  height: 65px;
+  height: 50px;
   color: #ffffff;
-}
-
-.search .searchBox:focus-within {
-  margin-top: 0;
-  padding: 0;
-  height: 65px;
 }
 
 .search .searchBox .input-group {
@@ -1251,6 +1252,12 @@ body {
   border-bottom: 1px solid rgba(76, 90, 103, 0.5);
 }
 
+.movie .movie-details .genres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .movie .movie-details .genres span::after {
   content: ", ";
 }
@@ -1261,15 +1268,24 @@ body {
 
 .movie .movie-details .movie-details-text {
   width: 40%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.movie .movie-details .rating-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 .movie .movie-details .rating-details .movie-details-text {
   margin-top: 0;
-}
-
-.movie .movie-details .ratings {
-  position: absolute;
-  display: inline;
 }
 
 .movie .movie-details .ratings .imdb,
@@ -1289,7 +1305,6 @@ body {
 .movie .movie-details .ratings .rotten-tomatoes p,
 .movie .movie-details .ratings .tmdb p {
   margin: 0px 0 -2px 5px;
-  position: absolute;
   bottom: 4px;
 }
 
@@ -1318,13 +1333,52 @@ body {
   overflow: scroll;
 }
 
+.movie .cast .row {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.movie .cast .cast_list .items {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 90%;
+          flex: 0 0 90%;
+  max-width: 90%;
+}
+
+.movie .cast .cast_list .item {
+  border-radius: 5px;
+  opacity: 1;
+}
+
+.movie .cast .cast_list .item img {
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  max-width: 150px;
+  width: 125px;
+  max-height: 150px;
+}
+
+.movie .cast .cast_list .card {
+  max-width: 125px;
+  border-radius: 5px;
+}
+
+.movie .cast .cast_list .card .card-body {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 125px;
+}
+
 .movie .cast .card {
-  width: 138px;
+  width: 125px;
+  min-width: 125px;
   display: inline-block;
   margin-right: 15px;
 }
 
 .movie .cast .card .card-body {
+  background-color: #151515;
   padding: 10px 5px;
 }
 
@@ -1453,6 +1507,18 @@ body {
   height: 500px;
 }
 
+.movie .recommendations .row {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.movie .recommendations .items {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 90%;
+          flex: 0 0 90%;
+  max-width: 90%;
+}
+
 .movie .recommendations img {
   width: auto;
   height: 150px;
@@ -1497,9 +1563,21 @@ body {
     display: block;
     margin: auto !important;
   }
+  .movie .cast .cast_list .items {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
   .movie .mobile-poster {
     margin-top: 25px;
     width: 100%;
+  }
+  .recommendations .items {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+            flex: 0 0 100% !important;
+    max-width: 100% !important;
   }
 }
 
@@ -1751,6 +1829,10 @@ body {
   .logo {
     font-size: 50px;
   }
+}
+
+.search-area {
+  margin: auto;
 }
 
 .search-area .title-bar {
@@ -2150,6 +2232,14 @@ body {
   font-size: 17px;
 }
 
+.body-wrap .back .rating {
+  margin-left: 15px;
+}
+
+.body-wrap .back .rating .ratings {
+  position: absolute;
+}
+
 .body-wrap .back .offers {
   margin-top: 30px;
   margin-left: 10px;
@@ -2161,48 +2251,6 @@ body {
   margin-right: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
-}
-
-.body-wrap .back .rating {
-  margin-left: 15px;
-}
-
-.body-wrap .back .rating .ratings {
-  position: absolute;
-  bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.body-wrap .back .rating .ratings .imdb,
-.body-wrap .back .rating .ratings .rotten-tomatoes,
-.body-wrap .back .rating .ratings .tmdb {
-  display: none !important;
-  font-size: 15px;
-}
-
-.body-wrap .back .rating .ratings .imdb img,
-.body-wrap .back .rating .ratings .rotten-tomatoes img,
-.body-wrap .back .rating .ratings .tmdb img {
-  height: 20px;
-  width: 20px;
-}
-
-.body-wrap .back .rating .ratings .imdb,
-.body-wrap .back .rating .ratings .rotten-tomatoes,
-.body-wrap .back .rating .ratings .tmdb {
-  margin-right: 13px;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  height: 20px;
-}
-
-.body-wrap .back .rating .ratings .imdb p,
-.body-wrap .back .rating .ratings .rotten-tomatoes p,
-.body-wrap .back .rating .ratings .tmdb p {
-  margin-left: 5px;
 }
 
 .body-wrap .back .button {
@@ -2275,61 +2323,95 @@ body {
   background: #355cc9;
 }
 
+.rating .ratings {
+  bottom: 10px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.rating .ratings .imdb,
+.rating .ratings .rotten-tomatoes,
+.rating .ratings .tmdb {
+  display: none !important;
+  font-size: 15px;
+}
+
+.rating .ratings .imdb img,
+.rating .ratings .rotten-tomatoes img,
+.rating .ratings .tmdb img {
+  height: 20px;
+  width: 20px;
+}
+
+.rating .ratings .imdb,
+.rating .ratings .rotten-tomatoes,
+.rating .ratings .tmdb {
+  margin-right: 13px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: 20px;
+}
+
+.rating .ratings .imdb p,
+.rating .ratings .rotten-tomatoes p,
+.rating .ratings .tmdb p {
+  margin-left: 5px;
+}
+
 @media (max-width: 576px) {
   .search-container {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
-  .card,
-  .inner {
+  .body-wrap .card,
+  .body-wrap .inner {
     margin: 0 !important;
-    height: 230px !important;
-    width: 155px !important;
+    height: 210px !important;
+    width: 140px !important;
   }
-  .card .posterImg,
-  .inner .posterImg {
-    height: 230px !important;
-    width: 155px !important;
+  .body-wrap .card .posterImg,
+  .body-wrap .inner .posterImg {
+    height: 210px !important;
+    width: 140px !important;
   }
-  .card .title,
-  .inner .title {
+  .body-wrap .card .title,
+  .body-wrap .inner .title {
     width: 110px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-  .card .rating,
-  .inner .rating {
-    margin-left: 8px !important;
-  }
-  .card .rating .ratings .imdb,
-  .card .rating .ratings .rotten-tomatoes,
-  .card .rating .ratings .tmdb,
-  .inner .rating .ratings .imdb,
-  .inner .rating .ratings .rotten-tomatoes,
-  .inner .rating .ratings .tmdb {
-    margin-right: 8px;
-    font-size: 12px !important;
-  }
-  .card .rating .ratings .imdb img,
-  .card .rating .ratings .rotten-tomatoes img,
-  .card .rating .ratings .tmdb img,
-  .inner .rating .ratings .imdb img,
-  .inner .rating .ratings .rotten-tomatoes img,
-  .inner .rating .ratings .tmdb img {
-    height: 16px !important;
-    width: 16px !important;
-  }
-  .card .offers,
-  .inner .offers {
-    margin-top: 20px !important;
+  .body-wrap .card .offers,
+  .body-wrap .inner .offers {
+    margin-top: 0px !important;
     margin-left: 10px;
   }
-  .card .offers .provider-icon,
-  .inner .offers .provider-icon {
+  .body-wrap .card .offers .provider-icon,
+  .body-wrap .inner .offers .provider-icon {
     height: 40px !important;
     width: 40px !important;
     margin-right: 7px !important;
     margin-bottom: 10px !important;
     border-radius: 10px !important;
+  }
+  .body-wrap .card .rating,
+  .body-wrap .inner .rating {
+    margin-left: 8px !important;
+  }
+  .rating .ratings .imdb,
+  .rating .ratings .rotten-tomatoes,
+  .rating .ratings .tmdb {
+    margin-right: 8px;
+    font-size: 12px !important;
+  }
+  .rating .ratings .imdb img,
+  .rating .ratings .rotten-tomatoes img,
+  .rating .ratings .tmdb img {
+    height: 16px !important;
+    width: 16px !important;
   }
 }
 

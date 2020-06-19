@@ -33,6 +33,7 @@ export const DashBoard = () => {
             <div className="bottomDIV">
               <MovieCardArea
                 movieData={upcomingMovies}
+                area="upcoming"
                 // heading="Upcoming Movies"
               />
             </div>
@@ -47,15 +48,21 @@ export const DashBoard = () => {
             <MovieCardArea
               movieData={upcomingMovies}
               heading="Upcoming Movies"
+              area="upcoming"
               release={true}
             />
           </div>
         </div>
         <div className="movieData">
-          <MovieCardArea movieData={trendingMovies} heading="Trending" />
+          <MovieCardArea
+            movieData={trendingMovies}
+            heading="Trending"
+            area="trending"
+          />
           <MovieCardArea
             movieData={topRatedMovies}
             heading="Top Rated Movies"
+            area="toprated"
           />
         </div>
       </div>

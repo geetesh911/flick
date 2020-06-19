@@ -70,6 +70,10 @@
         padding: 15px 15px 10px;
         width: 100%;
         border-radius: 0 20px 20px 0;
+        .items {
+          flex: 0 0 83%;
+          max-width: 83%;
+        }
       }
     }
     .dashboard-tv {

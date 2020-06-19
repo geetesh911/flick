@@ -130,7 +130,7 @@ const SearchState = (props) => {
 
       dispatch({ type: SINGLE_TITLE, payload: res.data });
     } catch (err) {
-      dispatch({ type: SINGLE_TITLE_FAILED, payload: err.response.msg });
+      dispatch({ type: SINGLE_TITLE_FAILED, payload: err.response });
     }
   };
 

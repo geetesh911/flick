@@ -3,13 +3,13 @@ import React, { useState, useContext, useEffect } from "react";
 import Spinner from "./../common/Spinner";
 import SearchContext from "./../../context/search/searchContext";
 import WatchlistContext from "./../../context/watchlist/watchlistContext";
-import $ from "jquery";
 import { FlippingCard } from "../common/FlippingCard";
+import { leftScroll, rightScroll } from "./../../utils/scroll";
 
 export const Search = () => {
   const [query, setQuery] = useState("");
   const [load, setLoad] = useState(false);
-  const [activeProvider, setActiveProvider] = useState("");
+  const [activeProviders, setActiveProviders] = useState([]);
 
   const watchlistContext = useContext(WatchlistContext);
   const { getWatchLists } = watchlistContext;
@@ -45,32 +45,34 @@ export const Search = () => {
     }
   };
 
-  const leftScroll = (event) => {
-    event.preventDefault();
-    $(`.items`).animate(
-      {
-        scrollLeft: "-=900px",
-      },
-      "slow"
-    );
-  };
-
-  const rightScroll = (event) => {
-    event.preventDefault();
-    $(`.items`).animate(
-      {
-        scrollLeft: "+=900px",
-      },
-      "slow"
-    );
-  };
-
   const handleProviderData = async (name) => {
-    setActiveProvider(name);
-    setLoad(true);
-    await getProviderData(name);
-    setLoad(false);
+    const prevActiveProviders = [...activeProviders];
+    let currentProviders = [...activeProviders];
+
+    if (activeProviders.length === 0) {
+      setActiveProviders([...activeProviders, name]);
+      currentProviders.push(name);
+    } else {
+      let noDup = false;
+      for (const provider of activeProviders)
+        if (provider === name) noDup = true;
+      if (!noDup) {
+        setActiveProviders([...activeProviders, name]);
+        currentProviders.push(name);
+      }
+    }
+
+    if (
+      JSON.stringify(prevActiveProviders) !== JSON.stringify(currentProviders)
+    ) {
+      sendRequest();
+      setLoad(true);
+      await getProviderData(currentProviders.join(","));
+      setLoad(false);
+    }
   };
+
+  const sendRequest = () => {};
 
   return (
     <div className="search container">
@@ -94,32 +96,34 @@ export const Search = () => {
             autoComplete="off"
           />
         </div>
-      </div>
-      <div className="container-fluid mt-3 search_providers_list">
-        <div className="row">
-          <div className="col-1 left-arrow" onClick={leftScroll}>
-            <i className="fas fa-angle-left" aria-hidden="true"></i>
-          </div>
-          <div className="col-10 items">
-            {providers &&
-              providers.map((provider) => (
-                <div
-                  className={`item ${
-                    activeProvider === provider.short_name ? "active" : ""
-                  }`}
-                  key={provider.id}
-                  onClick={() => handleProviderData(provider.short_name)}
-                >
-                  <img
-                    className="search_provider"
-                    src={provider.icon_url}
-                    alt=""
-                  />
-                </div>
-              ))}
-          </div>
-          <div className="col-1 right-arrow" onClick={rightScroll}>
-            <i className="fas fa-angle-right" aria-hidden="true"></i>
+        <div className="container-fluid mt-3 search_providers_list">
+          <div className="row">
+            <div className="col-1 left-arrow" onClick={leftScroll}>
+              <i className="fas fa-angle-left" aria-hidden="true"></i>
+            </div>
+            <div className="col-10 items">
+              {providers &&
+                providers.map((provider) => (
+                  <div
+                    className={`item ${
+                      activeProviders.includes(provider.short_name)
+                        ? "active"
+                        : ""
+                    }`}
+                    key={provider.id}
+                    onClick={() => handleProviderData(provider.short_name)}
+                  >
+                    <img
+                      className="search_provider"
+                      src={provider.icon_url}
+                      alt=""
+                    />
+                  </div>
+                ))}
+            </div>
+            <div className="col-1 right-arrow" onClick={rightScroll}>
+              <i className="fas fa-angle-right" aria-hidden="true"></i>
+            </div>
           </div>
         </div>
       </div>

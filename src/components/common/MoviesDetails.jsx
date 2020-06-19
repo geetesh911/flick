@@ -9,7 +9,7 @@ export const MoviesDetails = ({ singleTitle, genres }) => {
 
   singleTitle &&
     singleTitle.scoring &&
-    singleTitle.scoring.forEach(score => {
+    singleTitle.scoring.forEach((score) => {
       if (score.provider_type === "imdb:score") imdb = score.value;
       if (score.provider_type === "tomato:meter") rottenTomatoes = score.value;
       if (score.provider_type === "tmdb:score") tmdb = score.value;
@@ -21,15 +21,19 @@ export const MoviesDetails = ({ singleTitle, genres }) => {
       {singleTitle.scoring && (
         <div className="rating-details">
           <div className="text d-inline-block movie-details-text">Rating</div>
-          <Ratings imdb={imdb} rottenTomatoes={rottenTomatoes} tmdb={tmdb} />
+          <div className="rating">
+            <Ratings imdb={imdb} rottenTomatoes={rottenTomatoes} tmdb={tmdb} />
+          </div>
         </div>
       )}
       <div className="genres mt-1">
         <div className="text d-inline-block movie-details-text">Genres</div>
-        {singleTitle.genre_ids &&
-          singleTitle.genre_ids.map(genre => (
-            <span key={genre}>{genres[genre - 1].translation}</span>
-          ))}
+        <div className="genres-name">
+          {singleTitle.genre_ids &&
+            singleTitle.genre_ids.map((genre) => (
+              <span key={genre}>{genres[genre - 1].translation}</span>
+            ))}
+        </div>
       </div>
       {singleTitle.runtime && (
         <div className="runtime mt-1">
@@ -50,7 +54,7 @@ export const MoviesDetails = ({ singleTitle, genres }) => {
           <div className="text d-inline-block movie-details-text">Director</div>
           {singleTitle.credits &&
             singleTitle.credits.map(
-              credit =>
+              (credit) =>
                 credit.role === "DIRECTOR" && (
                   <Fragment key={credit.person_id}>{credit.name}</Fragment>
                 )

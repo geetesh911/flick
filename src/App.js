@@ -19,6 +19,7 @@ import WatchlistState from "./context/watchlist/WatchlistState";
 import setAuthToken from "./utils/setAuthToken";
 import { Alerts } from "./components/common/Alerts";
 // import { Music } from "./components/layout/Music";
+// import BottomNav from "./components/common/BottomNav";
 
 if (localStorage.token) setAuthToken(localStorage.token);
 
@@ -32,6 +33,7 @@ function App() {
               <Router>
                 <Fragment>
                   <NavBar />
+                  {/* <BottomNav /> */}
                   <Alerts />
                   <Switch>
                     <Route exact path="/" component={DashBoard} />

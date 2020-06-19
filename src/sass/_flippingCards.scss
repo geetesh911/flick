@@ -150,6 +150,12 @@ $accent-color: #355cc9;
         font-size: 17px;
       }
     }
+    .rating {
+      margin-left: 15px;
+      .ratings {
+        position: absolute;
+      }
+    }
     .offers {
       margin-top: 30px;
       //   text-align: center;
@@ -160,34 +166,6 @@ $accent-color: #355cc9;
         margin-right: 10px;
         margin-bottom: 10px;
         border-radius: 10px;
-      }
-    }
-    .rating {
-      margin-left: 15px;
-      .ratings {
-        position: absolute;
-        bottom: 10px;
-        display: flex;
-        .imdb,
-        .rotten-tomatoes,
-        .tmdb {
-          display: none !important;
-          img {
-            height: 20px;
-            width: 20px;
-          }
-          font-size: 15px;
-        }
-        .imdb,
-        .rotten-tomatoes,
-        .tmdb {
-          margin-right: 13px;
-          display: flex !important;
-          height: 20px;
-          p {
-            margin-left: 5px;
-          }
-        }
       }
     }
 
@@ -262,54 +240,92 @@ $accent-color: #355cc9;
   }
 }
 
+.rating {
+  // margin-left: 15px;
+  // position: relative;
+  .ratings {
+    // position: absolute;
+    bottom: 10px;
+    display: flex !important;
+    .imdb,
+    .rotten-tomatoes,
+    .tmdb {
+      display: none !important;
+      img {
+        height: 20px;
+        width: 20px;
+      }
+      font-size: 15px;
+    }
+    .imdb,
+    .rotten-tomatoes,
+    .tmdb {
+      margin-right: 13px;
+      display: flex !important;
+      height: 20px;
+      p {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
 @media (max-width: 576px) {
   .search-container {
     justify-content: center !important;
   }
-  .card,
-  .inner {
-    margin: 0 !important;
-    height: 230px !important;
-    width: 155px !important;
-    .posterImg {
-      height: 230px !important;
-      width: 155px !important;
-    }
-    .title {
-      width: 110px !important;
-    }
+  .body-wrap {
+    .card,
+    .inner {
+      margin: 0 !important;
+      height: 210px !important;
+      width: 140px !important;
+      .posterImg {
+        height: 210px !important;
+        width: 140px !important;
+      }
+      .title {
+        width: 110px !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
 
-    .rating {
-      margin-left: 8px !important;
-      .ratings {
-        .imdb,
-        .rotten-tomatoes,
-        .tmdb {
-          margin-right: 8px;
-          img {
-            height: 16px !important;
-            width: 16px !important;
-          }
-          font-size: 12px !important;
+      .offers {
+        margin-top: 0px !important;
+        //   text-align: center;
+        margin-left: 10px;
+        .provider-icon {
+          height: 40px !important;
+          width: 40px !important;
+          margin-right: 7px !important;
+          margin-bottom: 10px !important;
+          border-radius: 10px !important;
         }
       }
+      .rating {
+        margin-left: 8px !important;
+      }
+      // > .front,
+      // > .back {
+      //   height: 210px;
+      //   width: 150px;
+      // }
     }
-    .offers {
-      margin-top: 20px !important;
-      //   text-align: center;
-      margin-left: 10px;
-      .provider-icon {
-        height: 40px !important;
-        width: 40px !important;
-        margin-right: 7px !important;
-        margin-bottom: 10px !important;
-        border-radius: 10px !important;
+  }
+  .rating {
+    // margin-left: 8px !important;
+    .ratings {
+      .imdb,
+      .rotten-tomatoes,
+      .tmdb {
+        margin-right: 8px;
+        img {
+          height: 16px !important;
+          width: 16px !important;
+        }
+        font-size: 12px !important;
       }
     }
-    // > .front,
-    // > .back {
-    //   height: 230px;
-    //   width: 150px;
-    // }
   }
 }

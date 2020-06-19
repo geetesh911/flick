@@ -15,15 +15,15 @@
 
       &:focus {
         box-shadow: none;
-        height: 65px;
+        height: 50px;
         color: $whiteFirstLayer;
       }
     }
-    &:focus-within {
-      margin-top: 0;
-      padding: 0;
-      height: 65px;
-    }
+    // &:focus-within {
+    //   margin-top: 0;
+    //   padding: 0;
+    //   height: 65px;
+    // }
 
     .input-group {
       border: none;
