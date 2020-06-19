@@ -6,7 +6,11 @@ export const Recommendation = ({ singleTitle }) => {
     <Fragment>
       <p className="title-text">Recommendations</p>
       <div className="recommendations m-auto">
-        <MovieCardArea movieData={singleTitle.recommendation} name={true} />
+        <MovieCardArea
+          movieData={singleTitle.recommendation}
+          name={true}
+          area="recommendation"
+        />
       </div>
     </Fragment>
   );

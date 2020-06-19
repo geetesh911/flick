@@ -48,7 +48,7 @@
 
       .upcoming {
         text-align: left;
-        margin-left: 10px;
+        // margin-left: 10px;
         margin-bottom: 5px;
         color: #d9b534;
         font-family: "Lato", sans-serif;
@@ -71,8 +71,8 @@
         width: 100%;
         border-radius: 0 20px 20px 0;
         .items {
-          flex: 0 0 83%;
-          max-width: 83%;
+          flex: 0 0 87%;
+          max-width: 87%;
         }
       }
     }
@@ -170,7 +170,7 @@
 }
 
 // 768px
-@media (max-width: 769px) {
+@media (max-width: 992px) {
   .dashboard {
     // height: 40vh;
     .logo {

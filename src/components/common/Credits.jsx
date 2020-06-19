@@ -17,10 +17,13 @@ export const Credits = ({
       <div className="cast m-auto">
         <div className="container-fluid mt-3 cast_list search_providers_list">
           <div className="row">
-            <div className="col-1 left-arrow" onClick={leftScroll}>
+            <div
+              className="col-1 left-arrow"
+              onClick={(event) => leftScroll(event, "credits")}
+            >
               <i className="fas fa-angle-left" aria-hidden="true"></i>
             </div>
-            <div className="col-10 items">
+            <div className="col-10 items credits">
               {/* <div className="card-group"> */}
               {singleTitle.cast &&
                 singleTitle.cast.cast.map((credit) => (
@@ -57,7 +60,10 @@ export const Credits = ({
                   </div>
                 ))}
             </div>
-            <div className="col-1 right-arrow" onClick={rightScroll}>
+            <div
+              className="col-1 right-arrow"
+              onClick={(event) => rightScroll(event, "credits")}
+            >
               <i className="fas fa-angle-right" aria-hidden="true"></i>
             </div>
           </div>

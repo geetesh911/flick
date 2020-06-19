@@ -37,6 +37,7 @@ export const Search = () => {
   };
 
   const handleKeyDown = async (event) => {
+    setActiveProviders([]);
     const { keyCode } = event;
     if (keyCode === 13) {
       setLoad(true);
