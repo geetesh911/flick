@@ -1,0 +1,24 @@
+.ui.selection.dropdown {
+  background: $darkColor;
+  border-color: $darkColor !important;
+  color: $whiteSecondLayer;
+  .search {
+    color: $whiteFirstLayer;
+  }
+  .message {
+    color: rgba($whiteSecondLayer, 0.5) !important;
+  }
+  .menu {
+    color: $whiteSecondLayer;
+    background: $darkColor;
+    border-color: $darkColor !important;
+    .selected.item {
+      color: $whiteFirstLayer;
+    }
+    .item {
+      border-color: $darkColor;
+      text-transform: capitalize;
+      color: $whiteSecondLayer;
+    }
+  }
+}

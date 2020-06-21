@@ -53,6 +53,11 @@
         color: #d9b534;
         font-family: "Lato", sans-serif;
         text-transform: uppercase;
+        .startMovies-content {
+          img {
+            border-radius: 10px;
+          }
+        }
       }
 
       .dashboard-text {
@@ -127,7 +132,7 @@
 
   .movieData {
     position: absolute;
-    bottom: 150px;
+    bottom: 50px;
   }
 
   .startMovies,
@@ -138,15 +143,31 @@
     text-align: left;
     position: relative;
     width: 100%;
-    overflow-x: visible;
-    overflow-y: hidden;
-    white-space: nowrap;
-    transition: all 0.2s;
-    transform: scale(0.98);
-    will-change: transform;
-    user-select: none;
+    // overflow-x: visible;
+    // overflow-y: hidden;
+    // white-space: nowrap;
+    // transition: all 0.2s;
+    // transform: scale(0.98);
+    // will-change: transform;
+    // user-select: none;
     background: transparent;
     border-radius: 0px;
+
+    .dashboardList {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      .list_item {
+        flex: 0 0 16.6666666667%;
+        max-width: 16.6666666667%;
+        padding: 10px;
+        img {
+          border-radius: 10px;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
 
     .release_date {
       height: 27px;
@@ -154,7 +175,7 @@
       background-color: #101010;
     }
     &:last-of-type {
-      margin-bottom: 0px;
+      margin-bottom: 60px;
     }
   }
   .heading {
@@ -164,7 +185,7 @@
     margin-top: 50px;
     text-align: left;
     &:first-of-type {
-      margin-top: 80px;
+      margin-top: 50px;
     }
   }
 }
@@ -211,7 +232,32 @@
       }
     }
     .movieData {
-      bottom: 20px;
+      bottom: -50px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .dashboard {
+    .movieData {
+      .dashboardList {
+        .list_item {
+          flex: 0 0 20% !important;
+          max-width: 20% !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .dashboard {
+    .movieData {
+      .dashboardList {
+        .list_item {
+          flex: 0 0 25% !important;
+          max-width: 25% !important;
+        }
+      }
     }
   }
 }
@@ -231,6 +277,9 @@
       // align-self: left !important;
       margin-top: 20px !important;
       font-size: 20px !important;
+      &:first-of-type {
+        margin-top: 100px !important;
+      }
     }
     .dashboard-tv {
       align-items: center;
@@ -254,9 +303,18 @@
 
     .mobile-bottomDIV {
       display: block !important;
-      margin-bottom: 120px;
+      margin-bottom: 50px;
+      .heading {
+        margin-top: 20px !important;
+      }
     }
     .movieData {
+      .dashboardList {
+        .list_item {
+          flex: 0 0 50% !important;
+          max-width: 50% !important;
+        }
+      }
       bottom: 20px;
     }
 

@@ -114,14 +114,13 @@
         left: 0;
         text-align: center;
       }
-      .flatrate {
+      .flatrate,
+      .ads,
+      .free {
         background-color: #b5b8ba;
         color: #6d6d6d;
       }
-      .ads {
-        background-color: #b5b8ba;
-        color: #6d6d6d;
-      }
+
       .rent {
         background-color: #7c7c7c;
         color: #d6d6d6;
@@ -142,6 +141,18 @@
           width: 50px;
         }
       }
+    }
+  }
+
+  .videos {
+    .row {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+    .clip {
+      width: 100%;
+      height: 200px;
+      // height: 150%;
     }
   }
 
@@ -374,8 +385,8 @@
     }
     img {
       width: auto;
-      height: 150px;
-      border-radius: 8px 8px 0 0;
+      height: 250px;
+      border-radius: 8px 8px;
     }
     .name {
       border-radius: 0 0 8px 8px;
@@ -398,22 +409,9 @@
 @media (max-width: 768px) {
   .movie {
     .videos {
-      iframe {
-        width: 210px;
-        height: 130px;
-      }
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  .movie {
-    .videos {
-      iframe {
-        width: 330px;
-        height: 220px;
-        display: block;
-        margin: auto !important;
+      .clip {
+        // width: 250px;
+        height: 250px !important;
       }
     }
     .cast {
@@ -424,18 +422,32 @@
         }
       }
     }
+    .recommendations {
+      .items {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .movie {
+    // .videos {
+    //   iframe {
+    //     width: 330px;
+    //     height: 220px;
+    //     display: block;
+    //     margin: auto !important;
+    //   }
+    // }
+
     // .videoSource {
     //   height: 250px;
     // }
     .mobile-poster {
       margin-top: 25px;
       width: 100%;
-    }
-  }
-  .recommendations {
-    .items {
-      flex: 0 0 100% !important;
-      max-width: 100% !important;
     }
   }
 }

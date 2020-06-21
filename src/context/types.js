@@ -30,6 +30,12 @@ export const DELETE_WATCHLIST = "DELETE_WATCHLIST";
 export const DELETE_WATCHLIST_FAILED = "DELETE_WATCHLIST_FAILED";
 export const CLEAR_WATCHLIST = "CLEAR_WATCHLIST";
 
+export const SET_QUERY = "SET_QUERY";
+export const SET_PROVIDERS = "SET_PROVIDERS";
+export const SET_RELEASE_YEAR = "SET_RELEASE_YEAR";
+export const SET_GENRES = "SET_GENRES";
+export const SET_TYPE = "SET_TYPE";
+
 export const SET_ALERT = "SET_ALERT";
 export const REMOVE_ALERT = "REMOVE_ALERT";
 

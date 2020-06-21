@@ -174,6 +174,7 @@ export const SingleTitle = (props) => {
                   <Offer provider={provider} type="flatrate" heading="Stream" />
                   <Offer provider={provider} type="ads" heading="Stream" />
                   <Offer provider={provider} type="rent" heading="Rent" />
+                  <Offer provider={provider} type="free" heading="Stream" />
                   <Offer provider={provider} type="buy" heading="Buy" />
                 </div>
 
@@ -232,7 +233,7 @@ export const SingleTitle = (props) => {
                 )}
 
                 {singleTitle.recommendation &&
-                  singleTitle.recommendation.results.length > 0 && (
+                  singleTitle.recommendation.items.length > 0 && (
                     <Recommendation singleTitle={singleTitle} />
                   )}
                 <div className="bookmark-icon">

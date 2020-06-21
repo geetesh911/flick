@@ -8,17 +8,17 @@ import {
   GET_UPCOMING_MOVIES_FAILED,
   GET_TOP_RATED_MOVIES_FAILED,
   GET_TRENDING_MOVIES,
-  GET_TRENDING_MOVIES_FAILED
+  GET_TRENDING_MOVIES_FAILED,
 } from "../types";
 
 let TMDB_API_KEY = "c21a2d47027f8fc50ec163849848819b";
 
-const StartState = props => {
+const StartState = (props) => {
   const initialState = {
     upcomingMovies: null,
     topRatedMovies: null,
     trendingMovies: null,
-    error: null
+    error: null,
   };
 
   const [state, dispatch] = useReducer(startReducer, initialState);
@@ -32,7 +32,7 @@ const StartState = props => {
 
       const res = await data.json();
 
-      res.results.forEach(result => {
+      res.results.forEach((result) => {
         result.poster_path = `https://image.tmdb.org/t/p/w600_and_h900_bestv2${result.poster_path}`;
       });
       dispatch({ type: GET_UPCOMING_MOVIES, payload: res });
@@ -48,7 +48,7 @@ const StartState = props => {
 
       const res = await data.json();
 
-      res.results.forEach(result => {
+      res.results.forEach((result) => {
         result.poster_path = `https://image.tmdb.org/t/p/w600_and_h900_bestv2${result.poster_path}`;
       });
 
@@ -56,28 +56,40 @@ const StartState = props => {
     } catch (err) {
       dispatch({
         type: GET_TOP_RATED_MOVIES_FAILED,
-        payload: err.response
+        payload: err.response,
       });
     }
   };
 
   const getTrendingMovies = async () => {
     try {
-      const data = await fetch(
-        `https://api.themoviedb.org/3/trending/all/day?api_key=${TMDB_API_KEY}`
+      // const data = await fetch(
+      //   `https://api.themoviedb.org/3/trending/all/day?api_key=${TMDB_API_KEY}`
+      // );
+      const res = await fetch(
+        `https://apis.justwatch.com/content/titles/en_IN/popular?body=%7B%22content_types%22:[],%22monetization_types%22:[],%22page%22:0,%22page_size%22:100%7D`
       );
 
-      const res = await data.json();
+      const data = await res.json();
 
-      res.results.forEach(result => {
-        result.poster_path = `https://image.tmdb.org/t/p/w600_and_h900_bestv2${result.poster_path}`;
+      data.items.forEach((searchResult) => {
+        if (searchResult.poster) {
+          searchResult.poster = `https://images.justwatch.com${searchResult.poster}`;
+          let splittedPosterURL = searchResult.poster.split("/");
+          splittedPosterURL[splittedPosterURL.length - 1] = "s592";
+          searchResult.poster = splittedPosterURL.join("/");
+        }
       });
 
-      dispatch({ type: GET_TRENDING_MOVIES, payload: res });
+      // res.results.forEach(result => {
+      //   result.poster_path = `https://image.tmdb.org/t/p/w600_and_h900_bestv2${result.poster_path}`;
+      // });
+
+      dispatch({ type: GET_TRENDING_MOVIES, payload: data });
     } catch (err) {
       dispatch({
         type: GET_TRENDING_MOVIES_FAILED,
-        payload: err.response
+        payload: err.response,
       });
     }
   };
@@ -91,7 +103,7 @@ const StartState = props => {
         error: state.error,
         getUpcomingMovies,
         getTopRatedMovies,
-        getTrendingMovies
+        getTrendingMovies,
       }}
     >
       {props.children}

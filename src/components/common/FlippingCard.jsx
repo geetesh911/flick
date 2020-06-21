@@ -82,6 +82,7 @@ export const FlippingCard = ({ data, getSingleTitle }) => {
                     <i className="fas fa-bookmark"></i>
                   </label>
                 )}
+                {object_type === "show" && <div className="show-label">TV</div>}
               </div>
             </div>
             <div className="back">

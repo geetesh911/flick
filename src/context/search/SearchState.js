@@ -20,11 +20,16 @@ import {
   GET_PROVIDERS_FAILED,
   GET_PROVIDER_DATA,
   GET_PROVIDER_DATA_FAILED,
+  SET_QUERY,
+  SET_GENRES,
+  SET_PROVIDERS,
+  SET_RELEASE_YEAR,
+  SET_TYPE,
 } from "./../types";
 import getIP from "./../../utils/getIP";
 
 let API_URL = "";
-let PY_API_URL = "";
+// let PY_API_URL = "";
 
 if (process.env.NODE_ENV === "production") {
   API_URL = "https://flick-movie-api.herokuapp.com";
@@ -32,14 +37,21 @@ if (process.env.NODE_ENV === "production") {
   API_URL = "http://localhost:5000";
 }
 
-if (process.env.NODE_ENV === "production") {
-  PY_API_URL = "https://flick-py-api.herokuapp.com";
-} else {
-  PY_API_URL = "http://localhost:8000";
-}
+// if (process.env.NODE_ENV === "production") {
+//   PY_API_URL = "https://flick-py-api.herokuapp.com";
+// } else {
+//   PY_API_URL = "http://localhost:8000";
+// }
 
 const SearchState = (props) => {
   const initialState = {
+    filters: {
+      query: "",
+      providers: [],
+      releaseYear: [],
+      genres: [],
+      type: [],
+    },
     data: null,
     error: null,
     singleTitle: null,
@@ -52,10 +64,41 @@ const SearchState = (props) => {
 
   const [state, dispatch] = useReducer(searchReducer, initialState);
 
+  // set query
+  const setStateQuery = (query) => {
+    dispatch({ type: SET_QUERY, payload: query });
+  };
+
+  // set providers
+  const setStateProviders = (prov) => {
+    dispatch({ type: SET_PROVIDERS, payload: prov });
+  };
+
+  // set release year
+  const setStateYear = (year) => {
+    dispatch({ type: SET_RELEASE_YEAR, payload: year });
+  };
+
+  // set genres
+  const setStateGenres = (genres) => {
+    dispatch({ type: SET_GENRES, payload: genres });
+  };
+
+  // set type
+  const setStateType = (type) => {
+    dispatch({ type: SET_TYPE, payload: type });
+  };
+
   // get searched movies
-  const getData = async (query) => {
+  const getData = async (query, providers, year, genres, type) => {
     try {
-      const res = await fetch(`${PY_API_URL}/api/search/${query}`);
+      const res = await fetch(
+        `${API_URL}/api/search?query=${query}&providers=${JSON.stringify(
+          providers
+        )}&year=${JSON.stringify(year)}&genres=${JSON.stringify(
+          genres
+        )}&type=${JSON.stringify(type)}`
+      );
       const data = await res.json();
 
       data.items.forEach((searchResult) => {
@@ -74,9 +117,15 @@ const SearchState = (props) => {
   };
 
   // get searched movies
-  const getProviderData = async (name) => {
+  const getProviderData = async (query, providers, year, genres, type) => {
     try {
-      const res = await fetch(`${PY_API_URL}/api/getProviderData/${name}`);
+      const res = await fetch(
+        `${API_URL}/api/search?query=${query}&providers=${JSON.stringify(
+          providers
+        )}&year=${year.join(",")}&genres=${genres.join(
+          ","
+        )}&content_type=${JSON.stringify(type)}`
+      );
       const data = await res.json();
 
       data.items.forEach((searchResult) => {
@@ -90,14 +139,14 @@ const SearchState = (props) => {
 
       dispatch({ type: GET_PROVIDER_DATA, payload: data.items });
     } catch (err) {
-      dispatch({ type: GET_PROVIDER_DATA_FAILED, payload: err.response });
+      dispatch({ type: GET_PROVIDER_DATA_FAILED, payload: err });
     }
   };
 
   // get searched movies
   const getProviders = async () => {
     try {
-      const res = await fetch(`${PY_API_URL}/api/getProviders`);
+      const res = await fetch(`${API_URL}/api/providers`);
       let data = await res.json();
 
       data = data.filter((provider) => {
@@ -182,6 +231,7 @@ const SearchState = (props) => {
   return (
     <SearchContext.Provider
       value={{
+        filters: state.filters,
         data: state.data,
         singleTitle: state.singleTitle,
         genres: state.genres,
@@ -190,6 +240,11 @@ const SearchState = (props) => {
         error: state.error,
         season: state.season,
         loading: state.loading,
+        setStateQuery,
+        setStateYear,
+        setStateGenres,
+        setStateProviders,
+        setStateType,
         getData,
         getSingleTitle,
         getGenres,

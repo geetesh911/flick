@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import StartContext from "./../../context/start/startContext";
 import { MovieCardArea } from "./../common/MovieCardArea";
 import tv from "../../flick-images/tv.png";
+import { DashboardList } from "./../common/DashboardList";
 
 export const DashBoard = () => {
   const startContext = useContext(StartContext);
@@ -10,7 +11,6 @@ export const DashBoard = () => {
     getTopRatedMovies,
     getTrendingMovies,
     upcomingMovies,
-    topRatedMovies,
     trendingMovies,
   } = startContext;
   useEffect(() => {
@@ -53,17 +53,14 @@ export const DashBoard = () => {
             />
           </div>
         </div>
-        <div className="movieData">
-          <MovieCardArea
-            movieData={trendingMovies}
-            heading="Trending"
-            area="trending"
-          />
-          <MovieCardArea
+        <div className="movieData container-fluid">
+          <h3 className="heading ml-3">Popular</h3>
+          <DashboardList movieData={trendingMovies} />
+          {/* <MovieCardArea
             movieData={topRatedMovies}
             heading="Top Rated Movies"
             area="toprated"
-          />
+          /> */}
         </div>
       </div>
     </div>

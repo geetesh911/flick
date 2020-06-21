@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .search-area {
   //   justify-content: center !important;
   .col-sm-6,
@@ -176,7 +177,8 @@ $accent-color: #355cc9;
   }
 
   .button,
-  .bookmark {
+  .bookmark,
+  .show-label {
     // grid-row: -1;
     z-index: 999;
     text-transform: uppercase;
@@ -220,6 +222,20 @@ $accent-color: #355cc9;
         box-shadow: none;
       }
     }
+  }
+  .show-label {
+    background: $darkColor;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 4px;
+    padding: 8px 5px;
+    top: auto;
+    right: 10px;
+    bottom: 10px;
+    left: auto;
+    line-height: 0.8;
+    font-weight: 400;
+    height: auto;
   }
   .bookmark {
     left: 0;

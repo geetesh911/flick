@@ -1,0 +1,266 @@
+.filters {
+  position: absolute;
+  z-index: 9;
+  .filter-heading {
+    font-size: 20px;
+    color: $whiteSecondLayer;
+  }
+  .fil_release-year {
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 100px;
+    position: relative;
+
+    .MuiSvgIcon-root {
+      color: $darkColor;
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      right: 50%;
+      width: 2em;
+      height: 2em;
+    }
+    .release-year {
+      border-radius: 10px;
+      background: $darkColor;
+      padding: 10px;
+      .slider {
+        height: 50px;
+        margin-top: 30px;
+        .val {
+          text-align: center;
+          font-size: 12px;
+          color: $whiteSecondLayer;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.filter-strip {
+  display: flex;
+  margin-top: 15px;
+  padding: 0 5px;
+  button {
+    background: transparent;
+    border: none;
+    outline: none;
+    &:active {
+      outline: none;
+    }
+  }
+  .content-type {
+    display: flex;
+    .item {
+      padding: 5px 8px;
+      margin: 0 2px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 17px;
+      color: $whiteSecondLayer;
+      &:hover {
+        background-color: $darkColor;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  .filter-label,
+  .reset {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin-left: 10px;
+    color: rgba($whiteSecondLayer, 0.4);
+    span {
+      font-size: 17px;
+      text-transform: uppercase;
+      margin-left: 5px;
+    }
+  }
+  .filter-label-sm {
+    display: none;
+  }
+  .reset {
+    margin-left: auto;
+    order: 2;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: $darkColor;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .main-filters {
+    display: flex;
+    .item {
+      color: $whiteSecondLayer;
+      padding: 5px 10px;
+      margin-right: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 17px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: $darkColor;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  .active {
+    background-color: $darkColor;
+  }
+}
+
+.fil_genres {
+  margin-top: 10px;
+  margin-left: 220px;
+  position: relative;
+  width: 380px;
+  .genres {
+    background-color: $darkColor;
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 25px;
+  }
+  .filter-heading {
+    font-size: 20px;
+    margin: 5px 10px 10px;
+    color: $whiteSecondLayer;
+  }
+  .MuiSvgIcon-root {
+    color: $darkColor;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    right: 50%;
+    width: 2em;
+    height: 2em;
+  }
+  .genres-items {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+
+    .genre-item {
+      flex: 0 0 140px;
+      max-width: 140px;
+      padding: 10px;
+      align-items: center;
+      padding: 5px 10px;
+      color: rgba($whiteSecondLayer, 0.6);
+      cursor: pointer;
+      margin: 5px 0;
+      margin-left: 10px;
+      margin-right: 15px;
+      border-radius: 5px;
+      .item {
+        display: flex;
+        font-size: 15px;
+        span {
+          text-transform: capitalize;
+          margin-left: 5px;
+        }
+      }
+      &:hover {
+        color: rgba($whiteFirstLayer, 1);
+        background-color: rgba(#434f5b, 1);
+      }
+    }
+    .active {
+      color: rgba($whiteFirstLayer, 1);
+      background-color: rgba(#434f5b, 1);
+    }
+  }
+}
+
+.reset {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  margin-left: 10px;
+  color: rgba($whiteSecondLayer, 0.4);
+  margin-left: auto;
+  order: 2;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 135px;
+  span {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-left: 5px;
+  }
+  &:hover {
+    background-color: $darkColor;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.fil_drawer_genres {
+  margin-left: 0;
+  margin-top: 0;
+  border-bottom: 1px solid rgba($whiteSecondLayer, 0.2);
+  width: 320px;
+  .filter-heading {
+    display: none;
+  }
+  .genres {
+    padding: 5px;
+  }
+  .genres-items {
+    .genre-item {
+      flex: 0 0 140px;
+      max-width: 140px;
+      margin: 5px;
+    }
+  }
+}
+
+.fil_drawer_relYear {
+  border-bottom: 1px solid rgba($whiteSecondLayer, 0.2);
+  height: 60px;
+  .filter-heading {
+    display: none;
+  }
+  .row {
+    .val {
+      height: 60px;
+      padding: 0;
+      text-align: center;
+      color: rgba($whiteSecondLayer, 0.6);
+    }
+    .col-8 {
+      height: 60px;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-filters {
+    .item {
+      display: none;
+    }
+  }
+  .filter-label-lg {
+    display: none !important;
+  }
+  .filter-label-sm {
+    display: flex !important;
+    background: #434f5b;
+    border-radius: 5px;
+    color: $whiteSecondLayer !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .filter-label-sm {
+    .label-text {
+      display: none;
+    }
+  }
+}

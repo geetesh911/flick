@@ -1,7 +1,21 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import { leftScroll, rightScroll } from "./../../utils/scroll";
+import SearchContext from "./../../context/search/searchContext";
+import { Link } from "react-router-dom";
 
-export const MovieCardArea = ({ movieData, heading, release, name, area }) => {
+export const RecommendationCard = ({
+  movieData,
+  heading,
+  release,
+  // name,
+  area,
+}) => {
+  const searchContext = useContext(SearchContext);
+  const { getSingleTitle } = searchContext;
+
+  const getTitle = (object_type, id) => {
+    getSingleTitle(object_type, id);
+  };
   return (
     <Fragment>
       {heading && <h3 className="heading ml-3">{heading}</h3>}
@@ -16,32 +30,36 @@ export const MovieCardArea = ({ movieData, heading, release, name, area }) => {
           <div className={`col-10 items startMovies ${area || ""}`}>
             <div className="startMovies-content">
               {movieData &&
-                movieData.results.map((movie) => (
+                movieData.items.map((movie) => (
                   <Fragment key={movie.id}>
                     {movie && (
                       <div className="d-inline-block mr-3 poster">
-                        <img
-                          src={
-                            movie.poster ||
-                            movie.poster_path ||
-                            `https://media.comicbook.com/files/img/default-movie.png`
-                          }
-                          alt=""
-                          height="200px"
-                          width="150px"
-                          className=""
-                        />
+                        <Link
+                          to={`/${movie.object_type}/${movie.id}`}
+                          onClick={() => getTitle(movie.object_type, movie.id)}
+                        >
+                          <img
+                            src={
+                              movie.poster ||
+                              `https://media.comicbook.com/files/img/default-movie.png`
+                            }
+                            alt=""
+                            height="200px"
+                            width="150px"
+                            className=""
+                          />
+                        </Link>
 
                         {release && (
                           <div className="release_date">
                             {movie.release_date}
                           </div>
                         )}
-                        {name && (
+                        {/* {name && (
                           <div className="name">
                             {movie.title || movie.name}
                           </div>
-                        )}
+                        )} */}
                       </div>
                     )}
                   </Fragment>

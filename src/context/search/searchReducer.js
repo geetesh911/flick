@@ -16,10 +16,48 @@ import {
   GET_PROVIDER_DATA,
   GET_PROVIDER_DATA_FAILED,
   CLEAR_SEASON,
+  SET_GENRES,
+  SET_RELEASE_YEAR,
+  SET_PROVIDERS,
+  SET_QUERY,
+  SET_TYPE,
 } from "../types";
 
 export default (state, action) => {
   switch (action.type) {
+    case SET_QUERY:
+      return {
+        ...state,
+        filters: { ...state.filters, query: action.payload },
+        loading: false,
+      };
+    case SET_RELEASE_YEAR:
+      return {
+        ...state,
+        filters: { ...state.filters, releaseYear: action.payload },
+        loading: false,
+      };
+    case SET_PROVIDERS:
+      return {
+        ...state,
+        filters: { ...state.filters, providers: action.payload },
+        loading: false,
+      };
+    case SET_GENRES:
+      return {
+        ...state,
+        filters: { ...state.filters, genres: action.payload },
+        loading: false,
+      };
+    case SET_TYPE:
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
+          type: action.payload ? [action.payload] : [],
+        },
+        loading: false,
+      };
     case SEARCH:
       return {
         ...state,
