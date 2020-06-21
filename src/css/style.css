@@ -2003,7 +2003,6 @@ body {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
   will-change: transform;
-  height: 50px;
   scrollbar-width: none;
   /* Firefox */
   -ms-overflow-style: none;
@@ -2160,6 +2159,10 @@ body {
 
 .search_providers_list .fadeIn-right {
   left: 80%;
+}
+
+.search_providers_list .provider_items {
+  height: 50px;
 }
 
 .items::-webkit-scrollbar {

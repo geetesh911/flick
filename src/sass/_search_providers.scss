@@ -3,6 +3,7 @@
     overflow: hidden;
     position: relative;
   }
+
   .items {
     margin: 0 30px;
     padding: 0;
@@ -16,7 +17,6 @@
     height: 100%;
     transform: scale(0.98);
     will-change: transform;
-    height: 50px;
 
     .item {
       border-radius: 10px;
@@ -152,6 +152,9 @@
 
   .fadeIn-right {
     left: 80%;
+  }
+  .provider_items {
+    height: 50px;
   }
 }
 

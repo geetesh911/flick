@@ -187,7 +187,7 @@ export const Search = () => {
               <div className="col-1 left-arrow" onClick={leftScroll}>
                 <i className="fas fa-angle-left" aria-hidden="true"></i>
               </div>
-              <div className="col-10 items">
+              <div className="col-10 items provider_items">
                 {providers &&
                   providers.map((provider) => (
                     <div

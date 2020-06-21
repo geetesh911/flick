@@ -13,6 +13,14 @@ import {
 
 let TMDB_API_KEY = "c21a2d47027f8fc50ec163849848819b";
 
+let API_URL = "";
+
+if (process.env.NODE_ENV === "production") {
+  API_URL = "https://flick-movie-api.herokuapp.com";
+} else {
+  API_URL = "http://localhost:5000";
+}
+
 const StartState = (props) => {
   const initialState = {
     upcomingMovies: null,
@@ -66,9 +74,7 @@ const StartState = (props) => {
       // const data = await fetch(
       //   `https://api.themoviedb.org/3/trending/all/day?api_key=${TMDB_API_KEY}`
       // );
-      const res = await fetch(
-        `https://apis.justwatch.com/content/titles/en_IN/popular?body=%7B%22content_types%22:[],%22monetization_types%22:[],%22page%22:0,%22page_size%22:100%7D`
-      );
+      const res = await fetch(`${API_URL}/api/start/popular`);
 
       const data = await res.json();
 
