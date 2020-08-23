@@ -58,9 +58,9 @@ body {
 html {
   overflow-x: hidden !important;
 }
-// ::-webkit-scrollbar {
-//   display: none !important;
-// }
+::-webkit-scrollbar {
+  display: none !important;
+}
 
 .toast.show {
   text-align: center;

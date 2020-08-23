@@ -3028,6 +3028,10 @@ html {
   overflow-x: hidden !important;
 }
 
+::-webkit-scrollbar {
+  display: none !important;
+}
+
 .toast.show {
   text-align: center;
   margin: auto;
