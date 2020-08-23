@@ -1,0 +1,732 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "9Cap0MmvJOYKNU2qC5oXDy_r-Ww",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "O6aa46EdYwtRz3ZF01cCEhGvlIU",
+      "id": "i3k0zIICln4",
+      "snippet": {
+        "publishedAt": "2020-06-19T10:30:12Z",
+        "channelId": "UC3fryLB2yC_5ImR9mEl1v-A",
+        "title": "Kilometer (Full Video) R Nait | The Kidd | Tru Makers | Gold Media | Latest Punjabi Songs 2020",
+        "description": "R Nait Music & Virvinder Singh Kaku Presents\n🔔 Subscribe To Our Channel: http://goldmedia.digital/subscribe-rnait\n\nBuy from I-Tunes: http://goldmedia.digital/kilometer-apple\nListen on Apple Music: http://goldmedia.digital/kilometer-apple\nListen on Spotify: http://goldmedia.digital/kilometer-spotify\nListen on Gaana: http://goldmedia.digital/kilometer-gaana\nListen on Wynk Music: http://goldmedia.digital/kilometer-wynk\nListen on Youtube Music: http://goldmedia.digital/kilometer-youtubemusic\nListen on Resso App: http://goldmedia.digital/average-resso\nListen on Google Music: http://goldmedia.digital/kilometer-googlemusic\nListen on Hungama: http://goldmedia.digital/kilometer-hungama\nListen on Amazon Music: http://goldmedia.digital/kilometer-amazon\n\nMake Videos On Tiktok - https://vm.tiktok.com/JJkcUAb/\n\nSong - Kilometer Ft - Sara Gurpal\nSinger & Lyrics-  R Nait \nMusic - The Kidd\nMix & Master - Dense\nVideo - Tru Makers\nDirector - Dilsher & Khushpal \nDop - Mintu Plaha\nVideo Editor - Arshpreet\nProject By - Rajchet Sharma\nConceived By - Satkaranvir Singh Khosa\nHair Stylist - Lakshay Hair\nPhotography - Rajan Madaan\nOnline Promotion - Gold Media Entertainment\nPublicity Design - Impressive Design Studio\n\n\nOnline Promotion & Digital Distribution By Gold Media Entertainment (Mobile Number: +91-9988775720) \nhttps://www.instagram.com/goldmediaa/ \n\n\n\nEnjoy & stay connected with us!\n► Subscribe to R Nait : http://goldmedia.digital/subscribe-rnait\n► Like us on Facebook: https://www.facebook.com/OfficialRNait1\n► Follow us on Twitter: https://twitter.com/RNaitOfficial\n► Follow us on Instagram: https://instagram.com/official_rnait\n► Follow on Snapchat: https://www.snapchat.com/add/r-nait",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/i3k0zIICln4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/i3k0zIICln4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/i3k0zIICln4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/i3k0zIICln4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/i3k0zIICln4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "R Nait",
+        "tags": [
+          "nait",
+          "sidhu",
+          "moosewala",
+          "gippy",
+          "grewal",
+          "punjabi",
+          "song",
+          "music",
+          "video",
+          "humble",
+          "jagirdar",
+          "tere",
+          "pind",
+          "2800",
+          "live",
+          "best",
+          "songs",
+          "kilo meter",
+          "kilometer",
+          "kilo",
+          "meter",
+          "r nait",
+          "latest",
+          "2020",
+          "2019",
+          "2021",
+          "killo",
+          "killometer",
+          "killo meter",
+          "sara",
+          "gurpal",
+          "defaulter",
+          "dabda kithe ae",
+          "lootera",
+          "kaali range",
+          "latest punjabi songs 2020",
+          "latest punjabi songs 2019",
+          "latest punjabi songs"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Kilometer (Full Video) R Nait | The Kidd | Tru Makers | Gold Media | Latest Punjabi Songs 2020",
+          "description": "R Nait Music & Virvinder Singh Kaku Presents\n🔔 Subscribe To Our Channel: http://goldmedia.digital/subscribe-rnait\n\nBuy from I-Tunes: http://goldmedia.digital/kilometer-apple\nListen on Apple Music: http://goldmedia.digital/kilometer-apple\nListen on Spotify: http://goldmedia.digital/kilometer-spotify\nListen on Gaana: http://goldmedia.digital/kilometer-gaana\nListen on Wynk Music: http://goldmedia.digital/kilometer-wynk\nListen on Youtube Music: http://goldmedia.digital/kilometer-youtubemusic\nListen on Resso App: http://goldmedia.digital/average-resso\nListen on Google Music: http://goldmedia.digital/kilometer-googlemusic\nListen on Hungama: http://goldmedia.digital/kilometer-hungama\nListen on Amazon Music: http://goldmedia.digital/kilometer-amazon\n\nMake Videos On Tiktok - https://vm.tiktok.com/JJkcUAb/\n\nSong - Kilometer Ft - Sara Gurpal\nSinger & Lyrics-  R Nait \nMusic - The Kidd\nMix & Master - Dense\nVideo - Tru Makers\nDirector - Dilsher & Khushpal \nDop - Mintu Plaha\nVideo Editor - Arshpreet\nProject By - Rajchet Sharma\nConceived By - Satkaranvir Singh Khosa\nHair Stylist - Lakshay Hair\nPhotography - Rajan Madaan\nOnline Promotion - Gold Media Entertainment\nPublicity Design - Impressive Design Studio\n\n\nOnline Promotion & Digital Distribution By Gold Media Entertainment (Mobile Number: +91-9988775720) \nhttps://www.instagram.com/goldmediaa/ \n\n\n\nEnjoy & stay connected with us!\n► Subscribe to R Nait : http://goldmedia.digital/subscribe-rnait\n► Like us on Facebook: https://www.facebook.com/OfficialRNait1\n► Follow us on Twitter: https://twitter.com/RNaitOfficial\n► Follow us on Instagram: https://instagram.com/official_rnait\n► Follow on Snapchat: https://www.snapchat.com/add/r-nait"
+        }
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "R2Er_aGEL5FwecEghhUVM_AAWY4",
+      "id": "SVjkxdjivts",
+      "snippet": {
+        "publishedAt": "2020-06-03T05:30:22Z",
+        "channelId": "UCq-Fj5jknLsUf-MWSy4_brA",
+        "title": "Meri Aashiqui Song | Rochak Kohli Feat. Jubin Nautiyal | Ihana D | Shree Anwar Sagar | Bhushan Kumar",
+        "description": "Gulshan Kumar & T-Series present Bhushan Kumar's latest music video \"Meri Aashiqui \". This new song features Jubin Nautiyal Ihana Dhillon & Altamash Faraz and sung byJubin Nautiyal. The music for this romantic song is composed by Rochak Kohli and penned by Rashmi Virag. The video is directed by Ashish Panda.\n---------------------------------------------------------------- \nConnect with T-SERIES: 👉 http://bit.ly/TSeriesYouTube\n----------------------------------------------------------------\n----------------------------------------------------------------\nMake Your Tik Tok Video ► By Clicking  on the  links below : \nhttps://vm.tiktok.com/ErVC5y/\nhttps://vm.tiktok.com/ErCp4L/\nhttps://vm.tiktok.com/ErCRb8/\n------------------------------------------------------------------------\nMake Your Likee  Video ► By Clicking  on the  links below : \nhttps://l.likee.video/m/e6uLrx\nhttps://l.likee.video/m/FDlDbj\nhttps://l.likee.video/m/1zospP\n------------------------------------------------------------------------\n\n\n♪Stream the Full Song Here♪ \nJioSaavn: https://bit.ly/MeriAashiqui-JioSaavn\nSpotify: https://bit.ly/MeriAashiqui-Spotify\nHungama: https://bit.ly/MeriAashiqui-Hungama\nApple Music: https://bit.ly/MeriAashiqui-AppleMusic\nGaana: https://bit.ly/MeriAashiqui-Gaana\nAmazon Prime Music: https://bit.ly/MeriAashiqui-AmazonPrimeMusic\nWynk: https://bit.ly/MeriAashiqui-Wynk\nResso : https://bit.ly/MeriAashiqui-Resso\niTunes: https://bit.ly/MeriAashiqui-iTunes\nGoogle Play: https://bit.ly/MeriAashiqui-GooglePlay\n------------------------------------------------------------------------\n------------------------------------------------------------------------\n♪ For Caller Tunes :\nMeri Aashiqui https://bit.ly/3cB2VIK\nMeri Aashiqui - Baarishein https://bit.ly/2zPTR5D\nMeri Aashiqui - Kuch Kaho https://bit.ly/2AGJmSg\nMeri Aashiqui - Qatra Qatra https://bit.ly/3eO5SqR\nMeri Aashiqui - Sajda https://bit.ly/3eGSjto\n\n♪ Set as Caller Tune:\nSet \"Meri Aashiqui\" as your caller tune -sms MRIASQ1 To 54646\nSet \"Meri Aashiqui - Baarishein\" as your caller tune -sms MRIASQ2 To 54646\nSet \"Meri Aashiqui - Kuch Kaho\" as your caller tune - sms MRIASQ3 To 54646\nSet \"Meri Aashiqui - Qatra Qatra\" as your caller tune -sms MRIASQ4 To 54646\nSet \"Meri Aashiqui - Sajda\" as your caller tune - sms MRIASQ5 To 54646\n________________________________________\nSong Credits:\nSong - Meri Aashiqui - Rochak Kohli Feat. Jubin Nautiyal\nFeaturing - Jubin Nautiyal, Ihana Dhillon & Altamash Faraz\nSinger- Jubin Nautiyal\nMusic - Rochak Kohli\nOriginal Lyrics- Shree Anwar Sagar\nLyrics - Rashmi Virag\nAudio Production, Mixed and Mastered by - Aditya Dev\nVideo Director - Ashish Panda\nDOP - Sunita Radia\nAssociate Director - Tushar Susheel Thapliyal\nExecutive Producer - Ravi Chaturvedi \nEditor - Bunty Nagi\nProduction Designer - Mayur Barathe\nCostume Designer - Nivedita Das\nChoreographer - Debo Suresh Nair\nLine Producer - Paras Chhetri\nProduction Manager - Mithilesh Kumar Maurya\nSteadicam Operator - Rahul Steadicam\nDrone Operator - Prayash Sharma Tamuly\nPost Production Studio - Realtouch Studio Pvt Ltd\nStudio Head - Vikrant Kale\nD.I. Colorist - Deep Majithia\nVFX - Gaurvendra Singh\nAssistant Director - Rishabh Rishi Kumar\nAssistant Art Director - Pankaj Borale, Poonam Agarwal.\nInterns - Karamjot Singh, Sonal Mathur.\nSpecial Thanks - Lening Knari Bareh & Havil (Silver Brook Hotel Upper Shillong).\nMusic Label - T-Series\n________________________________________\nOperator Codes: \n1.Meri Aashiqui\nVodafone Subscribers Dial 53712012487\nAirtel Subscribers Dial 5432117431880\nIdea Subscribers Dial 53712012487\nTata DoCoMo Subscribers dial 54321112012487\nBSNL (South / East) Subscribers sms BT 12012487 To 56700\nVirgin Subscribers sms TT 12012487 To 58475\nMTNL Subscribers sms PT 12012487 To 56789\n\n2.Meri Aashiqui - Baarishein\nVodafone Subscribers Dial 53712012506\nAirtel Subscribers Dial 5432117431926\nIdea Subscribers Dial 53712012506\nTata DoCoMo Subscribers dial 54321112012506\nBSNL (South / East) Subscribers sms BT 12012506 To 56700\nVirgin Subscribers sms TT 12012506 To 58475\nMTNL Subscribers sms PT 12012506 To 56789\n___________________________________\r\nEnjoy & stay connected with us!\r\n👉 Subscribe to T-Series: http://bit.ly/TSeriesYouTube\r\n👉  Like us on Facebook: https://www.facebook.com/tseriesmusic\r\n👉Follow us on Twitter: https://twitter.com/tseries\r\n👉 Follow us on Instagram: http://bit.ly/InstagramTseries",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SVjkxdjivts/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SVjkxdjivts/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SVjkxdjivts/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/SVjkxdjivts/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/SVjkxdjivts/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "T-Series",
+        "tags": [
+          "Hindi Song",
+          "Meri Aashiqui song",
+          "Meri Aashiqui video",
+          "Meri Aashiqui film song",
+          "Meri Aashiqui tseries",
+          "Meri Aashiqui lyrics",
+          "Meri Aashiqui lyrical",
+          "Meri Aashiqui hindi song",
+          "Meri Aashiqui new song",
+          "Meri Aashiqui full video",
+          "Jubin Nautiyal",
+          "Jubin Nautiyal song",
+          "Jubin Nautiyal video",
+          "Jubin Nautiyal film song",
+          "Jubin Nautiyal tseries",
+          "Jubin Nautiyal lyrics",
+          "Jubin Nautiyal lyrical",
+          "Jubin Nautiyal hindi song",
+          "Jubin Nautiyal new song",
+          "new hindi song"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Meri Aashiqui Song | Rochak Kohli Feat. Jubin Nautiyal | Ihana D | Shree Anwar Sagar | Bhushan Kumar",
+          "description": "Gulshan Kumar & T-Series present Bhushan Kumar's latest music video \"Meri Aashiqui \". This new song features Jubin Nautiyal Ihana Dhillon & Altamash Faraz and sung byJubin Nautiyal. The music for this romantic song is composed by Rochak Kohli and penned by Rashmi Virag. The video is directed by Ashish Panda.\n---------------------------------------------------------------- \nConnect with T-SERIES: 👉 http://bit.ly/TSeriesYouTube\n----------------------------------------------------------------\n----------------------------------------------------------------\nMake Your Tik Tok Video ► By Clicking  on the  links below : \nhttps://vm.tiktok.com/ErVC5y/\nhttps://vm.tiktok.com/ErCp4L/\nhttps://vm.tiktok.com/ErCRb8/\n------------------------------------------------------------------------\nMake Your Likee  Video ► By Clicking  on the  links below : \nhttps://l.likee.video/m/e6uLrx\nhttps://l.likee.video/m/FDlDbj\nhttps://l.likee.video/m/1zospP\n------------------------------------------------------------------------\n\n\n♪Stream the Full Song Here♪ \nJioSaavn: https://bit.ly/MeriAashiqui-JioSaavn\nSpotify: https://bit.ly/MeriAashiqui-Spotify\nHungama: https://bit.ly/MeriAashiqui-Hungama\nApple Music: https://bit.ly/MeriAashiqui-AppleMusic\nGaana: https://bit.ly/MeriAashiqui-Gaana\nAmazon Prime Music: https://bit.ly/MeriAashiqui-AmazonPrimeMusic\nWynk: https://bit.ly/MeriAashiqui-Wynk\nResso : https://bit.ly/MeriAashiqui-Resso\niTunes: https://bit.ly/MeriAashiqui-iTunes\nGoogle Play: https://bit.ly/MeriAashiqui-GooglePlay\n------------------------------------------------------------------------\n------------------------------------------------------------------------\n♪ For Caller Tunes :\nMeri Aashiqui https://bit.ly/3cB2VIK\nMeri Aashiqui - Baarishein https://bit.ly/2zPTR5D\nMeri Aashiqui - Kuch Kaho https://bit.ly/2AGJmSg\nMeri Aashiqui - Qatra Qatra https://bit.ly/3eO5SqR\nMeri Aashiqui - Sajda https://bit.ly/3eGSjto\n\n♪ Set as Caller Tune:\nSet \"Meri Aashiqui\" as your caller tune -sms MRIASQ1 To 54646\nSet \"Meri Aashiqui - Baarishein\" as your caller tune -sms MRIASQ2 To 54646\nSet \"Meri Aashiqui - Kuch Kaho\" as your caller tune - sms MRIASQ3 To 54646\nSet \"Meri Aashiqui - Qatra Qatra\" as your caller tune -sms MRIASQ4 To 54646\nSet \"Meri Aashiqui - Sajda\" as your caller tune - sms MRIASQ5 To 54646\n________________________________________\nSong Credits:\nSong - Meri Aashiqui - Rochak Kohli Feat. Jubin Nautiyal\nFeaturing - Jubin Nautiyal, Ihana Dhillon & Altamash Faraz\nSinger- Jubin Nautiyal\nMusic - Rochak Kohli\nOriginal Lyrics- Shree Anwar Sagar\nLyrics - Rashmi Virag\nAudio Production, Mixed and Mastered by - Aditya Dev\nVideo Director - Ashish Panda\nDOP - Sunita Radia\nAssociate Director - Tushar Susheel Thapliyal\nExecutive Producer - Ravi Chaturvedi \nEditor - Bunty Nagi\nProduction Designer - Mayur Barathe\nCostume Designer - Nivedita Das\nChoreographer - Debo Suresh Nair\nLine Producer - Paras Chhetri\nProduction Manager - Mithilesh Kumar Maurya\nSteadicam Operator - Rahul Steadicam\nDrone Operator - Prayash Sharma Tamuly\nPost Production Studio - Realtouch Studio Pvt Ltd\nStudio Head - Vikrant Kale\nD.I. Colorist - Deep Majithia\nVFX - Gaurvendra Singh\nAssistant Director - Rishabh Rishi Kumar\nAssistant Art Director - Pankaj Borale, Poonam Agarwal.\nInterns - Karamjot Singh, Sonal Mathur.\nSpecial Thanks - Lening Knari Bareh & Havil (Silver Brook Hotel Upper Shillong).\nMusic Label - T-Series\n________________________________________\nOperator Codes: \n1.Meri Aashiqui\nVodafone Subscribers Dial 53712012487\nAirtel Subscribers Dial 5432117431880\nIdea Subscribers Dial 53712012487\nTata DoCoMo Subscribers dial 54321112012487\nBSNL (South / East) Subscribers sms BT 12012487 To 56700\nVirgin Subscribers sms TT 12012487 To 58475\nMTNL Subscribers sms PT 12012487 To 56789\n\n2.Meri Aashiqui - Baarishein\nVodafone Subscribers Dial 53712012506\nAirtel Subscribers Dial 5432117431926\nIdea Subscribers Dial 53712012506\nTata DoCoMo Subscribers dial 54321112012506\nBSNL (South / East) Subscribers sms BT 12012506 To 56700\nVirgin Subscribers sms TT 12012506 To 58475\nMTNL Subscribers sms PT 12012506 To 56789\n___________________________________\r\nEnjoy & stay connected with us!\r\n👉 Subscribe to T-Series: http://bit.ly/TSeriesYouTube\r\n👉  Like us on Facebook: https://www.facebook.com/tseriesmusic\r\n👉Follow us on Twitter: https://twitter.com/tseries\r\n👉 Follow us on Instagram: http://bit.ly/InstagramTseries"
+        },
+        "defaultAudioLanguage": "hi"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "c6XVHQLw5dR-4bC7pWrdvSqF2Ss",
+      "id": "zAD90YUdi5c",
+      "snippet": {
+        "publishedAt": "2020-06-10T06:29:47Z",
+        "channelId": "UCLtNvbkqea8wN_kGtfgx_Mw",
+        "title": "KHYAAL RAKHYA KAR - Asim Riaz & Himanshi Khurana | Preetinder | Anshul Garg | Latest Punjabi Song",
+        "description": "Anshul Garg presents Khyaal Rakhya Kar sung by Preetinder ft. Asim Riaz & Himanshi Khurana.\n\nListen Khyaal Rakhya Kar on streaming apps\n\nGaana- https://gaana.com/album/khyaal-rakhya-kar\nSaavn- https://www.saavn.com/s/song/punjabi/Khayaal-Rakhya-Kar/Khayaal-Rakhya-Kar/AlBbdzd0dF0\nWynk - https://wynk.in/u/67Nw9fj5I \nApple Music- https://music.apple.com/in/album/khayaal-rakhya-kar-single/1517776304\n\nSinger : Preetinder \nMusic : Rajat Nagpal\nLyrics: Babbu\nMusic Produced and Arranged by Rajat Nagpal \nMastered by Rahul Sharma@AMV\nStarring: Asim Riaz & Himanshi Khurana\n\nProduced By: Anshul Garg\n\nVideo Director - GURINDER BAWA\nAssistant Director - Preet Surrey\nEditor - Gaurav K Mehra\nDop - Shinda Singh \nDI - Onkar Singh\nVideo Supervisor: Raghav Sharma\nProject Manager : Piyush Chandak\nPoster : Vicky Sandhu \nDistribution: Believe Digital  \nDigital Promotions- Team DMF\n\nLyrics:\n\n\nTime te roti kha\nTime te saun ja\nTime te gal kar\nTime te milan aa\nJ raat nu jaanan bahr tan munde naal rakhya kar\nMera tu hi tu tan hain Tu apna khayaal rakhya kar\n\nKade kade roti aake ghare vi tan khaya kar\nVaise jinna dil kare paise tu udaaya kar\nKade kade coke naal saar leya kar ve\nRoz roz theek nahi peg ghatt laaya kar\nChote hi changey lagde chote vaal rakhya kar\nMera tu hi tu tan hain Tu apna khayaal rakhya kar\n\nChakkar nahi koi jinna marzi tu jach ve\nDuniya hai sarhdi tu nazran ton bach ve\nBabbu meri gal sun kudiyan ton duur rahin\nHath torh dau j koi tenu karu touch ve\nTu cheez pyaari hain Aehnu sambhaal rakhya kar\nMera tu hi tu tan hain Tu apna khayaal rakhya kar\n\nRabb nu chaddin na fer bahut agge jaayenga\nMain dekhya karangi jadon tv utte jaayenga\n\n\n#Preetinder #AsimRiaz #HimanshiKhurana",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zAD90YUdi5c/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zAD90YUdi5c/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zAD90YUdi5c/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/zAD90YUdi5c/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/zAD90YUdi5c/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Desi Music Factory",
+        "tags": [
+          "music",
+          "song",
+          "desi music factory",
+          "asim riaz",
+          "asim himanshi",
+          "asim himanish new song",
+          "khyaal rakhya kar",
+          "mera tu hee tu hai",
+          "chote baal rakhya kar",
+          "pahira",
+          "sidnaaz",
+          "shehnaaz gill",
+          "latest punjabi song 2020",
+          "new punjabi song",
+          "meri ashiqui",
+          "sidhu moosewala",
+          "kalla Sohna nai",
+          "tony kakkar",
+          "neha kakkar",
+          "yalgaar",
+          "carryminati",
+          "chote hee change lagde",
+          "chote baal rakhya",
+          "tu hee tu taa hai",
+          "apna khyaal rakha kar"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "KHYAAL RAKHYA KAR - Asim Riaz & Himanshi Khurana | Preetinder | Anshul Garg | Latest Punjabi Song",
+          "description": "Anshul Garg presents Khyaal Rakhya Kar sung by Preetinder ft. Asim Riaz & Himanshi Khurana.\n\nListen Khyaal Rakhya Kar on streaming apps\n\nGaana- https://gaana.com/album/khyaal-rakhya-kar\nSaavn- https://www.saavn.com/s/song/punjabi/Khayaal-Rakhya-Kar/Khayaal-Rakhya-Kar/AlBbdzd0dF0\nWynk - https://wynk.in/u/67Nw9fj5I \nApple Music- https://music.apple.com/in/album/khayaal-rakhya-kar-single/1517776304\n\nSinger : Preetinder \nMusic : Rajat Nagpal\nLyrics: Babbu\nMusic Produced and Arranged by Rajat Nagpal \nMastered by Rahul Sharma@AMV\nStarring: Asim Riaz & Himanshi Khurana\n\nProduced By: Anshul Garg\n\nVideo Director - GURINDER BAWA\nAssistant Director - Preet Surrey\nEditor - Gaurav K Mehra\nDop - Shinda Singh \nDI - Onkar Singh\nVideo Supervisor: Raghav Sharma\nProject Manager : Piyush Chandak\nPoster : Vicky Sandhu \nDistribution: Believe Digital  \nDigital Promotions- Team DMF\n\nLyrics:\n\n\nTime te roti kha\nTime te saun ja\nTime te gal kar\nTime te milan aa\nJ raat nu jaanan bahr tan munde naal rakhya kar\nMera tu hi tu tan hain Tu apna khayaal rakhya kar\n\nKade kade roti aake ghare vi tan khaya kar\nVaise jinna dil kare paise tu udaaya kar\nKade kade coke naal saar leya kar ve\nRoz roz theek nahi peg ghatt laaya kar\nChote hi changey lagde chote vaal rakhya kar\nMera tu hi tu tan hain Tu apna khayaal rakhya kar\n\nChakkar nahi koi jinna marzi tu jach ve\nDuniya hai sarhdi tu nazran ton bach ve\nBabbu meri gal sun kudiyan ton duur rahin\nHath torh dau j koi tenu karu touch ve\nTu cheez pyaari hain Aehnu sambhaal rakhya kar\nMera tu hi tu tan hain Tu apna khayaal rakhya kar\n\nRabb nu chaddin na fer bahut agge jaayenga\nMain dekhya karangi jadon tv utte jaayenga\n\n\n#Preetinder #AsimRiaz #HimanshiKhurana"
+        },
+        "defaultAudioLanguage": "hi"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "_93Irgz54ZeObG8n_xsvpZHdQjs",
+      "id": "LUO4KPeVjzc",
+      "snippet": {
+        "publishedAt": "2020-06-15T11:31:16Z",
+        "channelId": "UCn4rEMqKtwBQ6-oEwbd4PcA",
+        "title": "Jail - Kaathodu Kaathanen Lyric | G.V. Prakash Kumar, Dhanush, Aditi Rao Hydari | Vasanthabalan",
+        "description": "Soak in the #GVPrakash melody! #KaathoduKaathanen from Vasantabalan’s #Jail is all things dreamy! In the splendid voices of Dhanush and Aditi Rao Hydari , this scintillating number written by Kabilan, will leave you yearning for more!\n \nHit play and enjoy the official Tamil lyric video now!\n\nStream now - https://SMI.lnk.to/KaathoduKaathanenDC\nCreate Tik Tok https://vm.tiktok.com/J1XNXpD/\n\nMovie - Jail\nSong - Kaathodu Kaathanen\nMusic - G.V. Prakash Kumar\nSingers - Dhanush & Aditi Rao Hydari\nLyrics - Kabilan\nCast - G.V. Prakash Kumar, Abarnathy, Radhika Sarathkumar, Nandan Ram,Pasanga Pandi, Ravi Mariya\nDirector - G Vasanthabalan\nCinematography - Ganesh Chandhrra \nEditor - Raymond Derrick Crasta\nProducer - Sridharan Mariathasan\nBanner - Krikes Cine Creations\nSocial Media Partners - Helo & Tik Tok\n\nMusician Credits \nMusic producer - Raj Kumar Amal \nMix and mastered by Jehovahson  alghar \nDivine labs studios Chennai\n\nMusic Label - Sony Music Entertainment India Pvt. Ltd.\n\n© 2020 Sony Music Entertainment India Pvt. Ltd.\n\nSubscribe Now: http://bit.ly/SonyMusicSouthVevo\nSubscribe Now: http://bit.ly/SonyMusicSouthYT\nFollow us: https://www.instagram.com/sonymusic_south/\nFollow us: Twitter: https://twitter.com/SonyMusicSouth\nLike us: Facebook: https://www.facebook.com/SonyMusicSouth",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/LUO4KPeVjzc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/LUO4KPeVjzc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/LUO4KPeVjzc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/LUO4KPeVjzc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/LUO4KPeVjzc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Sony Music South",
+        "tags": [
+          "Sony Music South",
+          "Sony Music",
+          "Latest Song",
+          "Tamil song",
+          "Tamil Latest Song",
+          "Tamil Latest Songs 2018",
+          "Tamil Latest Songs 2019",
+          "Latest songs in Tamil",
+          "Songs in Tamil",
+          "Latest Tamil Movies",
+          "Tamil Movie Songs",
+          "Latest Video Songs Tamil",
+          "latest Tamil Love Songs",
+          "Latest Tamil Hit Songs",
+          "Telugu Songs 2019",
+          "New Tamil Songs",
+          "Songs in Telugu",
+          "Telugu Movie Songs",
+          "Video Songs Telugu",
+          "new Telugu Songs"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en-GB",
+        "localized": {
+          "title": "Jail - Kaathodu Kaathanen Lyric | G.V. Prakash Kumar, Dhanush, Aditi Rao Hydari | Vasanthabalan",
+          "description": "Soak in the #GVPrakash melody! #KaathoduKaathanen from Vasantabalan’s #Jail is all things dreamy! In the splendid voices of Dhanush and Aditi Rao Hydari , this scintillating number written by Kabilan, will leave you yearning for more!\n \nHit play and enjoy the official Tamil lyric video now!\n\nStream now - https://SMI.lnk.to/KaathoduKaathanenDC\nCreate Tik Tok https://vm.tiktok.com/J1XNXpD/\n\nMovie - Jail\nSong - Kaathodu Kaathanen\nMusic - G.V. Prakash Kumar\nSingers - Dhanush & Aditi Rao Hydari\nLyrics - Kabilan\nCast - G.V. Prakash Kumar, Abarnathy, Radhika Sarathkumar, Nandan Ram,Pasanga Pandi, Ravi Mariya\nDirector - G Vasanthabalan\nCinematography - Ganesh Chandhrra \nEditor - Raymond Derrick Crasta\nProducer - Sridharan Mariathasan\nBanner - Krikes Cine Creations\nSocial Media Partners - Helo & Tik Tok\n\nMusician Credits \nMusic producer - Raj Kumar Amal \nMix and mastered by Jehovahson  alghar \nDivine labs studios Chennai\n\nMusic Label - Sony Music Entertainment India Pvt. Ltd.\n\n© 2020 Sony Music Entertainment India Pvt. Ltd.\n\nSubscribe Now: http://bit.ly/SonyMusicSouthVevo\nSubscribe Now: http://bit.ly/SonyMusicSouthYT\nFollow us: https://www.instagram.com/sonymusic_south/\nFollow us: Twitter: https://twitter.com/SonyMusicSouth\nLike us: Facebook: https://www.facebook.com/SonyMusicSouth"
+        },
+        "defaultAudioLanguage": "en"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "hkrBf6MbuQ3jaNIwj9XJgKCqZVU",
+      "id": "wsvcMtamcGc",
+      "snippet": {
+        "publishedAt": "2020-06-16T12:30:02Z",
+        "channelId": "UClZF7OsrECe3t_ADrjZEh_Q",
+        "title": "Willpower : KS Makhan Feat. Money Aujla (Full Song) Latest Punjabi Songs 2020 | Geet MP3",
+        "description": "Geet MP3 & GK Digital Presenting New Song \"Willpower\" \nMake Sure You Will Like It And Spread it As Much As You Can. \n\nSubscribe To Our Channel For Upcoming Songs :  http://bit.ly/SubscribeGEETMP3\n\nAlso Available On :\n\nWynk Music : https://bit.ly/2APOzY4\nGaana : https://bit.ly/37Imo9H\nJio Saavn : https://bit.ly/2NeTZyA\nHungama : https://bit.ly/3dgj9aK\nPrime Music India : https://amzn.to/2NadOqP\niTunes : https://apple.co/3hLOOEr\nApple Music : https://apple.co/3hLOOEr\nSpotify : https://spoti.fi/37HIbhA\nGoogle Play : https://bit.ly/3eicn5z\nAmazon UK : https://amzn.to/2CpO0Vt\nYT Music : https://bit.ly/2Yf3kMX\n\n\n\nSong : Willpower\nSinger : KS Makhan\nLyrics : Sukh Sandhu\nMusic/Featuring : Money Aujla\nVideo : Sukaran Pathak & Rupen Bhardwaj\nProduced By : Kv Dhillon\nOnline Promotions : GK DIGITAL\nMusic Label : Geet MP3\n\n\n\nMusic Consultant & Digital Partner : GK Digital\nInstagram : https://www.instagram.com/GK.DIGITAL\n\nEnjoy and stay connected with us 📲\n\nWebsite : http://GeetMP3.com\nYouTube : https://www.youtube.com/c/GeetMP3 \nFacebook : https://www.facebook.com/iGeetMP3\nInstagram : https://www.instagram.com/GeetMP3\nTwitter : https://twitter.com/GeetMP3\nSnapChat : https://www.snapchat.com/add/GeetMP3",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/wsvcMtamcGc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/wsvcMtamcGc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/wsvcMtamcGc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/wsvcMtamcGc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/wsvcMtamcGc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Geet MP3",
+        "tags": [
+          "gk digital",
+          "geet mp3",
+          "latest punjabi songs",
+          "new punjabi song 2020",
+          "latest songs 2020",
+          "new song punjabi",
+          "new song 2020",
+          "new song 2020 hindi",
+          "new punjabi song",
+          "latest punjabi songs 2020",
+          "new punjabi songs 2020",
+          "geet mp3 song",
+          "punjabi songs",
+          "punjabi music",
+          "trending songs",
+          "KS Makhan",
+          "ks makhan",
+          "ks makhan willpower",
+          "willpower ks makhan",
+          "money aujla",
+          "willpower money aujla",
+          "ks makhan new song",
+          "ks makhan song",
+          "ks makhan all song"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en-GB",
+        "localized": {
+          "title": "Willpower : KS Makhan Feat. Money Aujla (Full Song) Latest Punjabi Songs 2020 | Geet MP3",
+          "description": "Geet MP3 & GK Digital Presenting New Song \"Willpower\" \nMake Sure You Will Like It And Spread it As Much As You Can. \n\nSubscribe To Our Channel For Upcoming Songs :  http://bit.ly/SubscribeGEETMP3\n\nAlso Available On :\n\nWynk Music : https://bit.ly/2APOzY4\nGaana : https://bit.ly/37Imo9H\nJio Saavn : https://bit.ly/2NeTZyA\nHungama : https://bit.ly/3dgj9aK\nPrime Music India : https://amzn.to/2NadOqP\niTunes : https://apple.co/3hLOOEr\nApple Music : https://apple.co/3hLOOEr\nSpotify : https://spoti.fi/37HIbhA\nGoogle Play : https://bit.ly/3eicn5z\nAmazon UK : https://amzn.to/2CpO0Vt\nYT Music : https://bit.ly/2Yf3kMX\n\n\n\nSong : Willpower\nSinger : KS Makhan\nLyrics : Sukh Sandhu\nMusic/Featuring : Money Aujla\nVideo : Sukaran Pathak & Rupen Bhardwaj\nProduced By : Kv Dhillon\nOnline Promotions : GK DIGITAL\nMusic Label : Geet MP3\n\n\n\nMusic Consultant & Digital Partner : GK Digital\nInstagram : https://www.instagram.com/GK.DIGITAL\n\nEnjoy and stay connected with us 📲\n\nWebsite : http://GeetMP3.com\nYouTube : https://www.youtube.com/c/GeetMP3 \nFacebook : https://www.facebook.com/iGeetMP3\nInstagram : https://www.instagram.com/GeetMP3\nTwitter : https://twitter.com/GeetMP3\nSnapChat : https://www.snapchat.com/add/GeetMP3"
+        },
+        "defaultAudioLanguage": "en"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "ARgrs5i_IqVNfWDcLRWfCIYL4jE",
+      "id": "4kSAlidErb8",
+      "snippet": {
+        "publishedAt": "2020-06-18T06:32:20Z",
+        "channelId": "UC_A7K2dXFsTMAciGmnNxy-Q",
+        "title": "Do Ka Chaar | Chaman Bahaar | Lyrical Video | Sonu Nigam | Jitendra Kumar, Ritika Badiani",
+        "description": "Chaman Bahaar streaming on Netflix from 19th June onwards!\n\nPresenting the love song of the season - Do Ka Chaar with lyrics from the movie Chaman Bahaar. The track is sung by Sonu Nigam and composed by Anshuman Mukherjee. Chaman Bahaar stars Jitendra Kumar and Ritika Badiani in lead roles. The film is directed by Apurva Dhar Badgaiyann.\n\nAn ambitious young man, in a small town in Central India, sets up a paan shop to a floundering start. His fortunes start to change dramatically when a family shifts in the house across the road. Hordes of boys start following the teenage girl from the family and set up an 'adda' at Billu's shop. His business flourishes tremendously but Billu is now unhappy than ever, as he has fallen for the girl himself! \n\nSong credits\n\nSinger - Sonu Nigam\nComposed by Anshuman Mukherjee\nLyrics - Apurva Dhar Badgaiyan\nProduced by Bharat Goel/Anshuman Mukherjee\nAssociate Producer - Firoz Khan\nViolin - Ajay Jayanthi\nMix&Master - Bharat Goel \n\nFilm Credits \n\nWritten and Directed By: Apurva Dhar Badgaiyann\nProducers:  Vikram Mehra, Siddharth Anand Kumar\nExecutive Producers: Gaurav Sharma, Sahil Sharma, Shoaib Lokhandwala\nLine Producer:  Vinod Prakash\nDirector Of Photography:  Arkodeb Mukherjee\nEditor:  Ujjwal Chandra\nSound Designer:  Subash Sahoo\nCostume Designer: Sachin Lovalekar\nProduction Designer: Mohd Sikandar S Ahmad\nMusic Director: Anshuman Mukherjee\nBackground Score: Mangesh Dhakde\nCasting Director: Shubham Gaur\n\nAlso hear on:\nhttps://ampl.ink/9nwBY\nWynk: https://bit.ly/DoKaChaarWynk\nResso: https://bit.ly/DoKaChaarResso\n\n\n#ChamanBahaar\n#DoKaChaar\n#SonuNigam\n\nLabel:: Saregama India Ltd.\r\n\r\nTo buy the original and virus free track, visit www.saregama.com\r\n\r\nFollow us on:\r\n\r\nYouTube: http://www.youtube.com/saregamamusic\r\n\r\nFacebook: http://www.facebook.com/Saregama\r\n\r\nTwitter: https://twitter.com/saregamaglobal",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/4kSAlidErb8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/4kSAlidErb8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/4kSAlidErb8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/4kSAlidErb8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/4kSAlidErb8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Saregama Music",
+        "tags": [
+          "chaman bahar song",
+          "do ka chaar song",
+          "do ka chaar tere liye",
+          "sonu nigam new song",
+          "sonu nigam",
+          "Jitendra Kumar",
+          "jeetu",
+          "chaman bahar official teaser",
+          "jitendra kumar tvf",
+          "jitendra kumar movie",
+          "netflix trailer",
+          "hindi songs",
+          "latest bollywood songs",
+          "sonu nigams hits songs",
+          "sonu nigam songs",
+          "sonu",
+          "sonu nigams best ever",
+          "sonu nigam hit"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Do Ka Chaar | Chaman Bahaar | Lyrical Video | Sonu Nigam | Jitendra Kumar, Ritika Badiani",
+          "description": "Chaman Bahaar streaming on Netflix from 19th June onwards!\n\nPresenting the love song of the season - Do Ka Chaar with lyrics from the movie Chaman Bahaar. The track is sung by Sonu Nigam and composed by Anshuman Mukherjee. Chaman Bahaar stars Jitendra Kumar and Ritika Badiani in lead roles. The film is directed by Apurva Dhar Badgaiyann.\n\nAn ambitious young man, in a small town in Central India, sets up a paan shop to a floundering start. His fortunes start to change dramatically when a family shifts in the house across the road. Hordes of boys start following the teenage girl from the family and set up an 'adda' at Billu's shop. His business flourishes tremendously but Billu is now unhappy than ever, as he has fallen for the girl himself! \n\nSong credits\n\nSinger - Sonu Nigam\nComposed by Anshuman Mukherjee\nLyrics - Apurva Dhar Badgaiyan\nProduced by Bharat Goel/Anshuman Mukherjee\nAssociate Producer - Firoz Khan\nViolin - Ajay Jayanthi\nMix&Master - Bharat Goel \n\nFilm Credits \n\nWritten and Directed By: Apurva Dhar Badgaiyann\nProducers:  Vikram Mehra, Siddharth Anand Kumar\nExecutive Producers: Gaurav Sharma, Sahil Sharma, Shoaib Lokhandwala\nLine Producer:  Vinod Prakash\nDirector Of Photography:  Arkodeb Mukherjee\nEditor:  Ujjwal Chandra\nSound Designer:  Subash Sahoo\nCostume Designer: Sachin Lovalekar\nProduction Designer: Mohd Sikandar S Ahmad\nMusic Director: Anshuman Mukherjee\nBackground Score: Mangesh Dhakde\nCasting Director: Shubham Gaur\n\nAlso hear on:\nhttps://ampl.ink/9nwBY\nWynk: https://bit.ly/DoKaChaarWynk\nResso: https://bit.ly/DoKaChaarResso\n\n\n#ChamanBahaar\n#DoKaChaar\n#SonuNigam\n\nLabel:: Saregama India Ltd.\r\n\r\nTo buy the original and virus free track, visit www.saregama.com\r\n\r\nFollow us on:\r\n\r\nYouTube: http://www.youtube.com/saregamamusic\r\n\r\nFacebook: http://www.facebook.com/Saregama\r\n\r\nTwitter: https://twitter.com/saregamaglobal"
+        },
+        "defaultAudioLanguage": "hi"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "bbSPWYjK7rfokTgXSrgr3-KIYE4",
+      "id": "nIiNqih9oZI",
+      "snippet": {
+        "publishedAt": "2020-06-16T04:36:04Z",
+        "channelId": "UCcvNYxWXR_5TjVK7cSCdW-g",
+        "title": "Sanjog (Full Song) Mehtab Virk Ft Sonia Mann | Dr Shree | Urs Guri | Latest Punjabi Songs 2020",
+        "description": "Presenting latest punjabi song Sanjog sung by Mehtab Virk. The music of new punjabi song is given by Dr Shree while lyrics are penned by Urs Guri. Enjoy and stay connected with us !!\n\nMake your Videos on TikTok:- https://vm.tiktok.com/J1G75TF/\nMake your Videos on TikTok:- https://vm.tiktok.com/J1GwTqg/\n\nMake Your Videos on Likee:- https://l.likee.video/m/L6fIt6\nMake Your Videos on Likee:- https://l.likee.video/m/SFM0Gz\n\nJioSaavn: https://bit.ly/Sanjog-JioSaavn\nSpotify: https://bit.ly/Sanjog-Spotify\nHungama: https://bit.ly/Sanjog-Hungama\nGaana: https://bit.ly/Sanjog-Gaana\nApple Music: https://bit.ly/Sanjog-AppleMusic\nAmazon Prime Music: https://bit.ly/Sanjog-AmazonPrimeMusic\nWynk: https://bit.ly/Sanjog-Wynk\nResso: https://bit.ly/Sanjog-Resso\niTunes: https://bit.ly/Sanjog-iTunes\nGoogle Play: https://bit.ly/Sanjog-GooglePlay\n\nSong: Sanjog\nSinger: Mehtab Virk\nArtist: Sonia Mann\nMusic: Dr Shree\nLyrics: Urs Guri\nDop: Tanveer Syed \nDirector: Prince 810\nMix & Master: Doctor DB\nMusic Label: T-Series\n---------------------------------------------------------------\nConnect with T-SERIES APNAPUNJAB\n----------------------------------------------------------------\nFor Latest Punjabi video's and songs stay connected with us!! \nSUBSCRIBE - http://www.youtube.com/tseriesapnapunjab\nFollow Us on TikTok - http://bit.ly/TseriesApnaPunjabTikTok\nLIKE US - http://www.facebook.com/tseriesapnapunjab\nInstagram - https://www.instagram.com/tseries.official\n-----------------------------------------------------------------\nSet \"Sanjog\" song as your caller tune sms SNJOG1 To 54646\nSet \"Sanjog - Tere Te\" song as your caller tune sms SNJOG2 To 54646\nSet \"Sanjog - Suit\" song as your caller tune sms SNJOG3 To 54646\nSet \"Sanjog - Pending\" song as your caller tune sms SNJOG4 To 54646\n-------------------------------------------------------------------\nOperator Codes:\n1. Sanjog\nVodafone Subscribers Dial 53712029678\nAirtel Subscribers Dial 5432117437698\nIdea Subscribers Dial 53712029678\nTata DoCoMo Subscribers dial 54321112029678\nBSNL (South / East) Subscribers sms BT 12029678 To 56700\nVirgin Subscribers sms TT 12029678 To 58475\nMTNL Subscribers sms PT 12029678 To 56789\n\n2. Sanjog - Tere Te\nVodafone Subscribers Dial 53712029675\nAirtel Subscribers Dial 5432117437697\nIdea Subscribers Dial 53712029675\nTata DoCoMo Subscribers dial 54321112029675\nBSNL (South / East) Subscribers sms BT 12029675 To 56700\nVirgin Subscribers sms TT 12029675 To 58475\nMTNL Subscribers sms PT 12029675 To 56789\n\n3. Sanjog - Suit\nVodafone Subscribers Dial 53712029676\nAirtel Subscribers Dial 5432117437632\nIdea Subscribers Dial 53712029676\nTata DoCoMo Subscribers dial 54321112029676\nBSNL (South / East) Subscribers sms BT 12029676 To 56700\nVirgin Subscribers sms TT 12029676 To 58475\nMTNL Subscribers sms PT 12029676 To 56789\n\n4. Sanjog - Pending\nVodafone Subscribers Dial 53712029677\nAirtel Subscribers Dial 5432117437670\nIdea Subscribers Dial 53712029677\nTata DoCoMo Subscribers dial 54321112029677\nBSNL (South / East) Subscribers sms BT 12029677 To 56700\nVirgin Subscribers sms TT 12029677 To 58475\nMTNL Subscribers sms PT 12029677 To 56789",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nIiNqih9oZI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nIiNqih9oZI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nIiNqih9oZI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/nIiNqih9oZI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/nIiNqih9oZI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "T-Series Apna Punjab",
+        "tags": [
+          "new song",
+          "latest song",
+          "songs 2020",
+          "new songs",
+          "latest songs",
+          "punjabi songs",
+          "punjabi bhangra",
+          "punjabi songs new",
+          "punjabi songs latest",
+          "punjabi song status",
+          "punjabi song dj",
+          "punjabi",
+          "latest punjabi songs 2020",
+          "latest punjabi songs",
+          "new punjabi songs",
+          "latest song 2020",
+          "latest punjabi song",
+          "mehtab virk",
+          "sanjog",
+          "mehtab virk new song",
+          "sanjog new punjabi song",
+          "dr shree",
+          "urs guri",
+          "sonia mann",
+          "sonia mann new song",
+          "mehtab virk song punjabi",
+          "mehtab virk sonia mann"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Sanjog (Full Song) Mehtab Virk Ft Sonia Mann | Dr Shree | Urs Guri | Latest Punjabi Songs 2020",
+          "description": "Presenting latest punjabi song Sanjog sung by Mehtab Virk. The music of new punjabi song is given by Dr Shree while lyrics are penned by Urs Guri. Enjoy and stay connected with us !!\n\nMake your Videos on TikTok:- https://vm.tiktok.com/J1G75TF/\nMake your Videos on TikTok:- https://vm.tiktok.com/J1GwTqg/\n\nMake Your Videos on Likee:- https://l.likee.video/m/L6fIt6\nMake Your Videos on Likee:- https://l.likee.video/m/SFM0Gz\n\nJioSaavn: https://bit.ly/Sanjog-JioSaavn\nSpotify: https://bit.ly/Sanjog-Spotify\nHungama: https://bit.ly/Sanjog-Hungama\nGaana: https://bit.ly/Sanjog-Gaana\nApple Music: https://bit.ly/Sanjog-AppleMusic\nAmazon Prime Music: https://bit.ly/Sanjog-AmazonPrimeMusic\nWynk: https://bit.ly/Sanjog-Wynk\nResso: https://bit.ly/Sanjog-Resso\niTunes: https://bit.ly/Sanjog-iTunes\nGoogle Play: https://bit.ly/Sanjog-GooglePlay\n\nSong: Sanjog\nSinger: Mehtab Virk\nArtist: Sonia Mann\nMusic: Dr Shree\nLyrics: Urs Guri\nDop: Tanveer Syed \nDirector: Prince 810\nMix & Master: Doctor DB\nMusic Label: T-Series\n---------------------------------------------------------------\nConnect with T-SERIES APNAPUNJAB\n----------------------------------------------------------------\nFor Latest Punjabi video's and songs stay connected with us!! \nSUBSCRIBE - http://www.youtube.com/tseriesapnapunjab\nFollow Us on TikTok - http://bit.ly/TseriesApnaPunjabTikTok\nLIKE US - http://www.facebook.com/tseriesapnapunjab\nInstagram - https://www.instagram.com/tseries.official\n-----------------------------------------------------------------\nSet \"Sanjog\" song as your caller tune sms SNJOG1 To 54646\nSet \"Sanjog - Tere Te\" song as your caller tune sms SNJOG2 To 54646\nSet \"Sanjog - Suit\" song as your caller tune sms SNJOG3 To 54646\nSet \"Sanjog - Pending\" song as your caller tune sms SNJOG4 To 54646\n-------------------------------------------------------------------\nOperator Codes:\n1. Sanjog\nVodafone Subscribers Dial 53712029678\nAirtel Subscribers Dial 5432117437698\nIdea Subscribers Dial 53712029678\nTata DoCoMo Subscribers dial 54321112029678\nBSNL (South / East) Subscribers sms BT 12029678 To 56700\nVirgin Subscribers sms TT 12029678 To 58475\nMTNL Subscribers sms PT 12029678 To 56789\n\n2. Sanjog - Tere Te\nVodafone Subscribers Dial 53712029675\nAirtel Subscribers Dial 5432117437697\nIdea Subscribers Dial 53712029675\nTata DoCoMo Subscribers dial 54321112029675\nBSNL (South / East) Subscribers sms BT 12029675 To 56700\nVirgin Subscribers sms TT 12029675 To 58475\nMTNL Subscribers sms PT 12029675 To 56789\n\n3. Sanjog - Suit\nVodafone Subscribers Dial 53712029676\nAirtel Subscribers Dial 5432117437632\nIdea Subscribers Dial 53712029676\nTata DoCoMo Subscribers dial 54321112029676\nBSNL (South / East) Subscribers sms BT 12029676 To 56700\nVirgin Subscribers sms TT 12029676 To 58475\nMTNL Subscribers sms PT 12029676 To 56789\n\n4. Sanjog - Pending\nVodafone Subscribers Dial 53712029677\nAirtel Subscribers Dial 5432117437670\nIdea Subscribers Dial 53712029677\nTata DoCoMo Subscribers dial 54321112029677\nBSNL (South / East) Subscribers sms BT 12029677 To 56700\nVirgin Subscribers sms TT 12029677 To 58475\nMTNL Subscribers sms PT 12029677 To 56789"
+        },
+        "defaultAudioLanguage": "en"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "LrmDT1N7iO8wPlcGUf4ZAw9SLLY",
+      "id": "fNhGuiKa8Jw",
+      "snippet": {
+        "publishedAt": "2020-06-17T04:30:23Z",
+        "channelId": "UCopY0NAzASqmD6eVaRj2TFQ",
+        "title": "Waliyan (Official Video) Shivjot | Sara Gurpal | Latest Punjabi Songs 2020 | White Hill Music",
+        "description": "White Hill Music presents new Punjabi song Waliyan by Shivjot & Sara Gurpal. Produced by Gunbir Singh Sidhu & Manmord Sidhu. \n\nCreate Tiktok Videos : \n1. https://vm.tiktok.com/J1GDBkq/\n2. https://vm.tiktok.com/J1GPmtP/\n\nCredits : \n\nSong : Waliyan \nSinger, Lyrics & Music : Shivjot\nFemale Vocals : Sara Gurpal\nFeaturing : Marianna Hovhannisian\nConceived by : Raymant Marwah\nMix & Master : Sounds Squad Studio\nEditor / DI : Honey Virk\nPhotography : Vipul Sharma\nTiktok & Social Media Promotion : Hub Of Talent (HOT)\nVideo : Yaadu Brar\nProduced by : Gunbir Singh Sidhu & Manmord Sidhu\nOnline Promotions : Pixilar Studios\n\nAlso Available on :- \n►Get this track from leading audio stores (Apple Music, iTunes, Amazon Music, Spotify) : https://backl.ink/142528287\n►YouTube Music : https://music.youtube.com/watch?v=2xyxgBAaOeE&feature=share\n►JioSaavn : https://www.jiosaavn.com/song/waliyan/HTxZY1lxY0Y\n►Gaana :  https://bit.ly/2YAeaMD\n►Wynk :https://bit.ly/2BjBMwQ\n►Google Play :  https://play.google.com/store/music/album?id=Bxg5w4kz724nsm2zuex6etcyzzq&tid=song-Tycgkztfqrfqunnfgjobrkacxrm&hl=en_IN\n►Hungama : https://www.hungama.com/song/waliyan/54082340/\n► Resso : https://m.resso.app/D2spak/\n\n\nSubscribe us on :-\nYouTube : http://bit.ly/SubscribeWhiteHillMusic\nInstagram : https://www.instagram.com/whitehillmusic/\nFacebook : -\nWhite Hill Music : https://www.facebook.com/whitehillmusic\nWhite Hill Studios : https://www.facebook.com/whitehillstudiosofficial  \nTwitter : https://twitter.com/whitehillmusic_\nTiktok : https://www.tiktok.com/@whitehillstudios\nWebsite : https://www.whitehillstudios.com\n\nPublished Year : 2020\nCopyright : White Hill Music & Entertainment Private Limited\nF-545,1st Floor,Phase -8A Industrial Area,Mohali - 160059",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fNhGuiKa8Jw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fNhGuiKa8Jw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fNhGuiKa8Jw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/fNhGuiKa8Jw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/fNhGuiKa8Jw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "White Hill Music",
+        "tags": [
+          "punjabi song",
+          "punjabi songs",
+          "new Punjabi songs 2020",
+          "new punjabi songs",
+          "latest punjabi songs",
+          "2020 punjabi songs",
+          "full punjabi songs HD",
+          "latest punjabi songs 2020",
+          "new punjabi songs 2020",
+          "white hill music",
+          "songs",
+          "new",
+          "full songs",
+          "full punjabi videos",
+          "2019",
+          "white hill songs",
+          "white hill music 2020",
+          "new songs 2020",
+          "shivjot",
+          "moti moti akh",
+          "shivjot songs",
+          "sara gurpal songs",
+          "sara gurpal"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Waliyan (Official Video) Shivjot | Sara Gurpal | Latest Punjabi Songs 2020 | White Hill Music",
+          "description": "White Hill Music presents new Punjabi song Waliyan by Shivjot & Sara Gurpal. Produced by Gunbir Singh Sidhu & Manmord Sidhu. \n\nCreate Tiktok Videos : \n1. https://vm.tiktok.com/J1GDBkq/\n2. https://vm.tiktok.com/J1GPmtP/\n\nCredits : \n\nSong : Waliyan \nSinger, Lyrics & Music : Shivjot\nFemale Vocals : Sara Gurpal\nFeaturing : Marianna Hovhannisian\nConceived by : Raymant Marwah\nMix & Master : Sounds Squad Studio\nEditor / DI : Honey Virk\nPhotography : Vipul Sharma\nTiktok & Social Media Promotion : Hub Of Talent (HOT)\nVideo : Yaadu Brar\nProduced by : Gunbir Singh Sidhu & Manmord Sidhu\nOnline Promotions : Pixilar Studios\n\nAlso Available on :- \n►Get this track from leading audio stores (Apple Music, iTunes, Amazon Music, Spotify) : https://backl.ink/142528287\n►YouTube Music : https://music.youtube.com/watch?v=2xyxgBAaOeE&feature=share\n►JioSaavn : https://www.jiosaavn.com/song/waliyan/HTxZY1lxY0Y\n►Gaana :  https://bit.ly/2YAeaMD\n►Wynk :https://bit.ly/2BjBMwQ\n►Google Play :  https://play.google.com/store/music/album?id=Bxg5w4kz724nsm2zuex6etcyzzq&tid=song-Tycgkztfqrfqunnfgjobrkacxrm&hl=en_IN\n►Hungama : https://www.hungama.com/song/waliyan/54082340/\n► Resso : https://m.resso.app/D2spak/\n\n\nSubscribe us on :-\nYouTube : http://bit.ly/SubscribeWhiteHillMusic\nInstagram : https://www.instagram.com/whitehillmusic/\nFacebook : -\nWhite Hill Music : https://www.facebook.com/whitehillmusic\nWhite Hill Studios : https://www.facebook.com/whitehillstudiosofficial  \nTwitter : https://twitter.com/whitehillmusic_\nTiktok : https://www.tiktok.com/@whitehillstudios\nWebsite : https://www.whitehillstudios.com\n\nPublished Year : 2020\nCopyright : White Hill Music & Entertainment Private Limited\nF-545,1st Floor,Phase -8A Industrial Area,Mohali - 160059"
+        },
+        "defaultAudioLanguage": "en-GB"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "-hVHkX8Tl_S6Z-rFb0Sf4Es1ZrU",
+      "id": "nVoaKmDJRcI",
+      "snippet": {
+        "publishedAt": "2020-06-15T05:30:13Z",
+        "channelId": "UCFFbwnve3yF62-tVXkTyHqg",
+        "title": "Yeh Mann - Jannat Zubair | Aakanksha Sharma | Kapil Jangir | Dhanraj Dadhich | Zee Music Originals",
+        "description": "👉🏻 SUBSCRIBE to Zee Music Company - https://bit.ly/2yPcBkS \n\nMake your TikTok Video Here - https://bit.ly/30GqsWi\n\nTo Stream & Download Full Song:\nGaana -  https://bit.ly/37u7uDT\nJioSaavn - https://bit.ly/2MZ4qGm\nWynk Music - https://bit.ly/2C9qRqf\niTunes -  https://apple.co/2UEvUFx\nApple Music - https://apple.co/2UEvUFx\nGoogle Play - https://bit.ly/2YCNbzY\nAmazon Prime Music - https://amzn.to/3e53R9M\nHungama - https://bit.ly/2Y53tTn\nSpotify - https://spoti.fi/2YxWyB7\nYouTube Music -  https://bit.ly/2C99yFJ\nResso - https://bit.ly/2YH3trQ\n\nProducer: Anurag Bedi - Business Head Zee Music Company\nSong - Yeh Mann\nSinger - Aakanksha Sharma\nMusic - Kapil Jangir \nLyricist - Dhanraj Dadhich\nMarketing & Promotions: Kirthi Shridhar Rai - Marketing Head Zee Music Company\nProject Head: Deepti Bhatia\n\nMusic Producer - Aditya Dev\nMix & Master - Aditya Dev\nFlute - Tejas Vinchurkar\n\nCreative Director - Gaurav Jang      \nVideo - Zubair Rahmani         \nChoreography by Amit Syal and Aleena Shaikh\n\nMusic on Zee Music Company\n\nConnect with us on :\nTwitter - https://www.twitter.com/ZeeMusicCompany\nFacebook - https://www.facebook.com/zeemusiccompany\nInstagram - https://www.instagram.com/zeemusiccompany\nYouTube - http://bit.ly/TYZMC",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nVoaKmDJRcI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nVoaKmDJRcI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nVoaKmDJRcI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/nVoaKmDJRcI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/nVoaKmDJRcI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Zee Music Company",
+        "tags": [
+          "Yeh Mann",
+          "Yeh Man",
+          "jannat zubair songs",
+          "yeh mann jannat zubair",
+          "yeh mann jannat zubair song",
+          "jannat zubair new song",
+          "jannat zubair rahmani",
+          "aakanksha sharma song",
+          "aakanksha sharma all song",
+          "aakanksha sharma new song",
+          "Kapil Jangir",
+          "Dhanraj Dadhich",
+          "New Romanic Songs",
+          "Hindi Songs 2020",
+          "New Hindi Songs 2020",
+          "New Romantic Hindi Songs",
+          "Jannat Zubair Romantic Song",
+          "2020 Hindi Song",
+          "Yeh man",
+          "YehMann jannant",
+          "kabhi kabhi",
+          "Udneko karta"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Yeh Mann - Jannat Zubair | Aakanksha Sharma | Kapil Jangir | Dhanraj Dadhich | Zee Music Originals",
+          "description": "👉🏻 SUBSCRIBE to Zee Music Company - https://bit.ly/2yPcBkS \n\nMake your TikTok Video Here - https://bit.ly/30GqsWi\n\nTo Stream & Download Full Song:\nGaana -  https://bit.ly/37u7uDT\nJioSaavn - https://bit.ly/2MZ4qGm\nWynk Music - https://bit.ly/2C9qRqf\niTunes -  https://apple.co/2UEvUFx\nApple Music - https://apple.co/2UEvUFx\nGoogle Play - https://bit.ly/2YCNbzY\nAmazon Prime Music - https://amzn.to/3e53R9M\nHungama - https://bit.ly/2Y53tTn\nSpotify - https://spoti.fi/2YxWyB7\nYouTube Music -  https://bit.ly/2C99yFJ\nResso - https://bit.ly/2YH3trQ\n\nProducer: Anurag Bedi - Business Head Zee Music Company\nSong - Yeh Mann\nSinger - Aakanksha Sharma\nMusic - Kapil Jangir \nLyricist - Dhanraj Dadhich\nMarketing & Promotions: Kirthi Shridhar Rai - Marketing Head Zee Music Company\nProject Head: Deepti Bhatia\n\nMusic Producer - Aditya Dev\nMix & Master - Aditya Dev\nFlute - Tejas Vinchurkar\n\nCreative Director - Gaurav Jang      \nVideo - Zubair Rahmani         \nChoreography by Amit Syal and Aleena Shaikh\n\nMusic on Zee Music Company\n\nConnect with us on :\nTwitter - https://www.twitter.com/ZeeMusicCompany\nFacebook - https://www.facebook.com/zeemusiccompany\nInstagram - https://www.instagram.com/zeemusiccompany\nYouTube - http://bit.ly/TYZMC"
+        },
+        "defaultAudioLanguage": "hi"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "yTLNJ1hy62UnMYnrvlNR3TETihE",
+      "id": "kAQUKKggPvo",
+      "snippet": {
+        "publishedAt": "2020-06-20T02:30:02Z",
+        "channelId": "UCuB7zkQVpcPKzHYJn45vM9w",
+        "title": "Tu Raji Ema Hu Raji - Jignesh Barot | HD Video | Latest Gujarati Sad Song | RDC Gujarati",
+        "description": "Tu Raji Ema Hu Raji - Jignesh Barot | HD Video | Latest Gujarati Sad Song | RDC Gujarati\n\n►Subscribe Now For More Videos - https://www.youtube.com/user/RDCGujarati/videos?disable_polymer=1?sub_confirmation=1\r\n\r\nSong : Tu Raji Ema Hu Raji\nSinger & Artist : Jignesh Barot\nArtists : Zeel Joshi, Yash Barot, Vishal Kaviraj, Mukesh Jani\nChild-Artist : Shreyanshi Barot (Tunny)\nLyrics : Manu Rabari\nMusic Director : Mayur Nadiya\nBackground Music  : Jitu Prajapati\nD.O.P.: Montu Rajput, Chirag Thakor\nEdit : Montu Rajput\nStory & Concept : Utsavi Jigar Chirag\nProducer : Jignesh Barot, Tejpalsinh Chavda  \nDirector : Gunvant Thakor\nDesign : Jigar Thakor\nTechnical : Patel Aakash\nSp.Thanks : LOGLAB TECHNOLOGY LLP\nSupport : All Fans, Friends , Family Members\nAll Rights © JIGNESH BAROT\nDigital Partner : RDC Media Pvt. Ltd.\n\n🎵 AIRTEL હેલોટ્યુન માટે ડાયરેક્ટ ડાયલ કરો\n\nTu Raji Ema Hun Raji - 5432117351225\nTari Marji Ni - 5432117346552\nKanta Ni Jem Mane - 5432117351228\nRese Afsos Mane - 5432117346554\nTari Khushi Ma - 5432117350502\nDarek Vato Tari Mane - 5432117351227\n\n🎵 VODAFONE કોલર ટ્યુન માટે ડાયરેક્ટ ડાયલ કરો\n\nTu Raji Ema Hun Raji - 53711863923\nTari Marji Ni - 53711863918\nKanta Ni Jem Mane - 53711863921\nRese Afsos Mane - 53711863926\nTari Khushi Ma - 53711863925\nDarek Vato Tari Mane - 53711863924\n\n🎵 IDEA ડાઇલર ટ્યુન માટે ડાયરેક્ટ ડાયલ કરો\n\nTu Raji Ema Hun Raji - 53711863923\nTari Marji Ni - 53711863918\nKanta Ni Jem Mane - 53711863921\nRese Afsos Mane - 53711863926\nTari Khushi Ma - 53711863925\nDarek Vato Tari Mane - 53711863924\n------------------------------------------------------------------------------\r\nConnect with us on :\r\n------------------------------------------------------------------------------\r\n✫ Subscribe : https://goo.gl/y6zgp4\r\n✫ Dailymotion : https://goo.gl/BUiTts\r\n✫ Facebook : https://goo.gl/rCngrH\r\n✫ G+ : https://goo.gl/LSMnbA\r\n✫ Twitter : https://goo.gl/cSN911",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kAQUKKggPvo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kAQUKKggPvo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kAQUKKggPvo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/kAQUKKggPvo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/kAQUKKggPvo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "RDC Gujarati",
+        "tags": [
+          "Tu Raji Ema Hu Raji",
+          "jignesh barot",
+          "jignesh kaviraj",
+          "jignesh barot new song",
+          "tu raji ema hu raji jignesh barot",
+          "jignesh barot tu raji ema hu raji",
+          "jignesh kaviraj new song",
+          "jignesh barot tu raji me hu raji",
+          "jignesh barot na geet",
+          "rdc gujarati",
+          "jignesh barot song",
+          "jignesh kaviraj new song 2020",
+          "new gujarati song",
+          "latest gujarati song 2020",
+          "latest gujarati sad song",
+          "gujarati sad song",
+          "gujarati song",
+          "gujarati song jignesh kaviraj",
+          "rakesh barot song",
+          "vijay suvada",
+          "new song 2020"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Tu Raji Ema Hu Raji - Jignesh Barot | HD Video | Latest Gujarati Sad Song | RDC Gujarati",
+          "description": "Tu Raji Ema Hu Raji - Jignesh Barot | HD Video | Latest Gujarati Sad Song | RDC Gujarati\n\n►Subscribe Now For More Videos - https://www.youtube.com/user/RDCGujarati/videos?disable_polymer=1?sub_confirmation=1\r\n\r\nSong : Tu Raji Ema Hu Raji\nSinger & Artist : Jignesh Barot\nArtists : Zeel Joshi, Yash Barot, Vishal Kaviraj, Mukesh Jani\nChild-Artist : Shreyanshi Barot (Tunny)\nLyrics : Manu Rabari\nMusic Director : Mayur Nadiya\nBackground Music  : Jitu Prajapati\nD.O.P.: Montu Rajput, Chirag Thakor\nEdit : Montu Rajput\nStory & Concept : Utsavi Jigar Chirag\nProducer : Jignesh Barot, Tejpalsinh Chavda  \nDirector : Gunvant Thakor\nDesign : Jigar Thakor\nTechnical : Patel Aakash\nSp.Thanks : LOGLAB TECHNOLOGY LLP\nSupport : All Fans, Friends , Family Members\nAll Rights © JIGNESH BAROT\nDigital Partner : RDC Media Pvt. Ltd.\n\n🎵 AIRTEL હેલોટ્યુન માટે ડાયરેક્ટ ડાયલ કરો\n\nTu Raji Ema Hun Raji - 5432117351225\nTari Marji Ni - 5432117346552\nKanta Ni Jem Mane - 5432117351228\nRese Afsos Mane - 5432117346554\nTari Khushi Ma - 5432117350502\nDarek Vato Tari Mane - 5432117351227\n\n🎵 VODAFONE કોલર ટ્યુન માટે ડાયરેક્ટ ડાયલ કરો\n\nTu Raji Ema Hun Raji - 53711863923\nTari Marji Ni - 53711863918\nKanta Ni Jem Mane - 53711863921\nRese Afsos Mane - 53711863926\nTari Khushi Ma - 53711863925\nDarek Vato Tari Mane - 53711863924\n\n🎵 IDEA ડાઇલર ટ્યુન માટે ડાયરેક્ટ ડાયલ કરો\n\nTu Raji Ema Hun Raji - 53711863923\nTari Marji Ni - 53711863918\nKanta Ni Jem Mane - 53711863921\nRese Afsos Mane - 53711863926\nTari Khushi Ma - 53711863925\nDarek Vato Tari Mane - 53711863924\n------------------------------------------------------------------------------\r\nConnect with us on :\r\n------------------------------------------------------------------------------\r\n✫ Subscribe : https://goo.gl/y6zgp4\r\n✫ Dailymotion : https://goo.gl/BUiTts\r\n✫ Facebook : https://goo.gl/rCngrH\r\n✫ G+ : https://goo.gl/LSMnbA\r\n✫ Twitter : https://goo.gl/cSN911"
+        },
+        "defaultAudioLanguage": "gu"
+      }
+    }
+  ],
+  "nextPageToken": "CAoQAA",
+  "pageInfo": {
+    "totalResults": 46,
+    "resultsPerPage": 10
+  }
+}

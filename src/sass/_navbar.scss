@@ -63,3 +63,23 @@ body {
     padding: 0 100px;
   }
 }
+
+.makeStyles-root-1 {
+  width: 100% !important;
+  position: absolute;
+  bottom: 0;
+  z-index: 99999;
+}
+.MuiBottomNavigationAction-root {
+  color: $whiteThirdLayer !important;
+}
+.MuiBottomNavigation-root {
+  background-color: $darkColor !important;
+  .Mui-selected {
+    color: $whiteFirstLayer !important;
+    fill: $whiteFirstLayer;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -45,6 +45,10 @@ $aquaThirdLayer: #2cb0ba;
 @import "filters";
 @import "selectSearch";
 
+// music
+@import "music/musicAppBar";
+@import "music/musicHomeSection";
+
 // CSS
 body {
   // background-color: #08111d;
@@ -54,9 +58,9 @@ body {
 html {
   overflow-x: hidden !important;
 }
-::-webkit-scrollbar {
-  display: none !important;
-}
+// ::-webkit-scrollbar {
+//   display: none !important;
+// }
 
 .toast.show {
   text-align: center;
@@ -111,4 +115,14 @@ html {
   .form-container {
     max-width: 500px;
   }
+}
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+@font-face {
+  font-family: YtSans;
+  src: url("../assets/fonts/YouTube-Sans-Medium.otf") format("opentype");
 }

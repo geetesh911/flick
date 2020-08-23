@@ -26,25 +26,29 @@ export const WatchList = (props) => {
   return (
     <div className="search-area">
       <div className="title-bar">My List</div>
-      {watchlist.length > 0 ? (
-        watchlist.map((list) => (
-          <FlippingCard
-            data={list}
-            key={list.id}
-            getSingleTitle={getSingleTitle}
-          />
-        ))
-      ) : (
-        <Fragment>
-          {loading ? (
-            <Spinner />
+      <div className="container">
+        <div className="row">
+          {watchlist.length > 0 ? (
+            watchlist.map((list) => (
+              <FlippingCard
+                data={list}
+                key={list.id}
+                getSingleTitle={getSingleTitle}
+              />
+            ))
           ) : (
-            <div className="list-empty-msg">
-              No movies or series in the list
-            </div>
+            <Fragment>
+              {loading ? (
+                <Spinner />
+              ) : (
+                <div className="list-empty-msg">
+                  No movies or series in the list
+                </div>
+              )}
+            </Fragment>
           )}
-        </Fragment>
-      )}
+        </div>
+      </div>
     </div>
   );
 };

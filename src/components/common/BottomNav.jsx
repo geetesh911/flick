@@ -2,20 +2,21 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import FolderIcon from "@material-ui/icons/Folder";
-import RestoreIcon from "@material-ui/icons/Restore";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
+import HomeIcon from "@material-ui/icons/HomeRounded";
+import SearchIcon from "@material-ui/icons/Search";
+import CheckIcon from "@material-ui/icons/Check";
+import MenuIcon from "@material-ui/icons/Menu";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
-    width: 500,
+    width: "100%",
   },
 });
 
 export default function BottomNav() {
   const classes = useStyles();
-  const [value, setValue] = React.useState("recents");
+  const [value, setValue] = React.useState("home");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -28,24 +29,33 @@ export default function BottomNav() {
       className={classes.root}
     >
       <BottomNavigationAction
-        label="Recents"
-        value="recents"
-        icon={<RestoreIcon />}
+        component={Link}
+        to="/"
+        label="Home"
+        value="home"
+        icon={<HomeIcon />}
       />
       <BottomNavigationAction
-        label="Favorites"
-        value="favorites"
-        icon={<FavoriteIcon />}
+        component={Link}
+        to="/search"
+        label="Search"
+        value="search"
+        icon={<SearchIcon />}
       />
       <BottomNavigationAction
-        label="Nearby"
-        value="nearby"
-        icon={<LocationOnIcon />}
+        component={Link}
+        to="/mylist"
+        label="My List"
+        value="mylist"
+        icon={<CheckIcon />}
       />
+
       <BottomNavigationAction
-        label="Folder"
-        value="folder"
-        icon={<FolderIcon />}
+        component={Link}
+        to="/more"
+        label="More"
+        value="more"
+        icon={<MenuIcon />}
       />
     </BottomNavigation>
   );
