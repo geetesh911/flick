@@ -75,6 +75,10 @@ body {
 }
 .MuiBottomNavigation-root {
   background-color: $darkColor !important;
+  width: 100% !important;
+  position: absolute;
+  bottom: 0;
+  z-index: 99999;
   .Mui-selected {
     color: $whiteFirstLayer !important;
     fill: $whiteFirstLayer;

@@ -84,6 +84,10 @@ body {
 
 .MuiBottomNavigation-root {
   background-color: #151515 !important;
+  width: 100% !important;
+  position: absolute;
+  bottom: 0;
+  z-index: 99999;
 }
 
 .MuiBottomNavigation-root .Mui-selected {
