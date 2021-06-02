@@ -17,7 +17,7 @@ axClient.interceptors.request.use((config) => {
   config.params["part"] = "snippet";
   config.params["videoCategoryId"] = "10";
   config.params["type"] = "video";
-  config.params["key"] = "AIzaSyCZIa7XXX7zmrgkElM4CHalfTl0zWyPKKQ";
+  config.params["key"] = process.env.GOOGLE_KEY;
   return config;
 });
 

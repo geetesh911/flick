@@ -11,7 +11,7 @@ import {
   GET_TRENDING_MOVIES_FAILED,
 } from "../types";
 
-let TMDB_API_KEY = "c21a2d47027f8fc50ec163849848819b";
+const { TMDB_API_KEY } = process.env;
 
 let API_URL = "";
 
